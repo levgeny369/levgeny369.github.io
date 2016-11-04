@@ -9,6 +9,7 @@ var arrange = function(data) {
         features_mini2.className = "features_mini2";
         features_text.className = "features_text";        
         img.className = "features_img";    
+        features_mini.innerHTML = item.features_mini;
         features_mini2.innerHTML = item.features_mini2;
         features_text.innerHTML = item.features_text;            
         img.src = item.src;     
