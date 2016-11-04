@@ -85,6 +85,11 @@ table {
 ---------------------------
 */
 
+a {
+  display: inline-block;
+  
+}
+
 
 body{
   font-family: sans-serif;
@@ -115,7 +120,11 @@ body{
   font-size: 20.8px;
   color: white;
   /*//margin: 25px 50px 10px 98px;*/
-  margin: 2% 5% 1% 10%;
+  margin: 20px 5% 1% 10%;
+}
+
+.menu_mini_2 {
+	display: none;
 }
 
 
@@ -1202,6 +1211,7 @@ font-family: "Lato-Thin", sans-serif;
 
 
   .menu_mini_2 {
+  	display: inline-block;
     position: fixed;
     top: 10px;
     right: 30px;
@@ -1273,6 +1283,9 @@ font-family: "Lato-Thin", sans-serif;
     margin: 2% 2% 1% 4%;
   }
 
+	.menu_mini_2 {
+	display: inline-block;
+	}
 
   .title {
     /*//margin: 100px 0;*/
