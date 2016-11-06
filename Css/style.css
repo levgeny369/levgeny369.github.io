@@ -444,7 +444,7 @@ body{
 
 .galery_img_big {
   
-  margin: 0 5%;
+  margin: 0 auto;
   /*//margin: 0 8%;*/
   
 }
@@ -1496,6 +1496,10 @@ font-family: "Lato-Thin", sans-serif;
 
 }
 
+.galery_img {
+  text-align: center;
+}
+
 .galery_img_big img {
   width: 80%;
 }
@@ -1633,7 +1637,7 @@ font-family: "Lato-Thin", sans-serif;
 
 .galery_img_big {
   
-  margin: 0 2%;
+  margin: 0 auto;
   /*//margin: 0 8%;*/
   
 }
