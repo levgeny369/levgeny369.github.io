@@ -438,8 +438,8 @@ body{
   display: inline-block;
   float: left;
   font-size: 0;
-  text-align: center;
-  /*//margin: 0 auto;*/
+  width: 100%;
+  margin: 0 auto;
 }
 
 .galery_img_big {
@@ -1494,10 +1494,6 @@ font-family: "Lato-Thin", sans-serif;
 .works_text {
   font-size: 25px;
 
-}
-
-.galery_img {
-  text-align: center;
 }
 
 .galery_img_big img {
