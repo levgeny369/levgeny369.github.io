@@ -439,7 +439,7 @@ body{
   float: left;
   font-size: 0;
   width: 100%;
-  margin: 0 auto;
+  text-align: center;
 }
 
 .galery_img_big {
