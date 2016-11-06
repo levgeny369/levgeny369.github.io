@@ -24,8 +24,8 @@ var arrange = function(data) {
      data.features1.forEach(function(item, i, arr) {
          var src1 = document.createElement("a");
          var img1 = document.createElement("img");
-         src1.className = "src1";
-         img1.className = "img1";
+         // src1.className = "src1";
+         // img1.className = "img1";
          src1.innerHTML = item.src1;
          img1.innerHTML = item.img1;
          src1.href = "#";
@@ -38,8 +38,8 @@ var arrange = function(data) {
     data.features2.forEach(function(item, i, arr) {
         var src2 = document.createElement("a");
          var img2 = document.createElement("img");
-         src2.className = "src2";
-         img2.className = "img";
+         // src2.className = "src2";
+         // img2.className = "img";
          src2.innerHTML = item.src2;
          img2.innerHTML = item.img2;
          src2.href = "#";
