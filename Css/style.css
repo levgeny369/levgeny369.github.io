@@ -1257,9 +1257,9 @@ font-family: "Lato-Thin", sans-serif;
     color: white;
   }
    
-  #toggle_menu {
+  /*#toggle_menu {
     display: none;
-  }
+  }*/
 
   /*#toggle_menu:checked ~ .menu_mini {
     display: block;
