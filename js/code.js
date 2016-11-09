@@ -1,6 +1,6 @@
 var arrange = function(data) {
     var features = document.getElementById("features");
-    data.flexblocks.forEach(function(item, i, arr) {
+    data.blocks.forEach(function(item, i, arr) {
         var features_mini = document.createElement("div");
         var features_mini2 = document.createElement("span");
         var features_text = document.createElement("div");      
