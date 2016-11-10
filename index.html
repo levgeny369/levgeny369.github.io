@@ -8,8 +8,6 @@
 
 	</style>
 
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-
 	<link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
@@ -31,6 +29,7 @@
 	<!-- <div onclick="hide(this)">foobar</div> -->
 
 	<script type="text/javascript" language="javascript" src="js/script.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery-3.1.1.min.js"></script>
 
 
 </head>
@@ -459,6 +458,34 @@
 				</div>
 		{{/each}}
 	</script>
+
+
+	<script>
+$(document).ready(function() {   
+    $('a[name=modal]').click(function(e) {
+    e.preventDefault();
+    var id = $(this).attr('href');
+    var maskHeight = $(document).height();
+    var maskWidth = $(window).width();
+    $('#mask').css({'width':maskWidth,'height':maskHeight});
+    $('#mask').fadeIn(1000); 
+    $('#mask').fadeTo("slow",0.8); 
+    var winH = $(window).height();
+    var winW = $(window).width();
+    $(id).css('top',  winH/2-$(id).height()/2);
+    $(id).css('left', winW/2-$(id).width()/2);
+    $(id).fadeIn(2000); 
+    });
+    $('.window .close').click(function (e) { 
+    e.preventDefault();
+    $('#mask, .window').hide();
+    }); 
+    $('#mask').click(function () {
+    $(this).hide();
+    $('.window').hide();
+    }); 
+   });  
+</script>
 
 <!-- 
 
