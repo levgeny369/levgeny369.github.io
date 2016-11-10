@@ -20,9 +20,10 @@ xml.open("GET", "base.json", true);
 xml.onreadystatechange = function() {
 	if(xml.readyState == 4) {
 		if(xml.status == 200) {
+			console.log(xml.responseText);
 		}
 		else{
-			alert("Ошибка request: " +xml.status + " " + xml.statusText);
+			alert("Ошибка request: " + xml.status + " " + xml.statusText);
 		}
 	}
 }
