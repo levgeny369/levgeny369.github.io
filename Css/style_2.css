@@ -30,6 +30,8 @@
     height:203px;
     padding:10px;
     background-color:#ffffff;
+    position: fixed;
+    margin: auto;
     }  
 .top {
     position:absolute;

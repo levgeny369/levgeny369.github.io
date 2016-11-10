@@ -150,7 +150,21 @@
 
 			<div class="galery">
 				<ul>
-					<li><a href="#">All</a></li>
+					<!-- <li><a href="#">All</a></li> -->
+
+					<li><a href="#dialog" name="modal">All</a></li>
+
+					<!-- Само окно -->
+					<div id="boxes">  
+						<div id="dialog" class="window"> Test window
+							<div class="top"><a href="#" class="link close"/>Close</a></div>
+							<div class="content">Text in window. The All.</div>
+						</div>
+					</div>
+
+					<!-- Маска, затемняющая фон -->
+					<div id="mask"></div>
+
 					<li><a href="#">Branding</a></li>
 					<li><a href="#">Web</a></li>
 					<li><a href="#">Logo Design</a></li>
@@ -328,18 +342,7 @@
 		</div>
 
 
-	<a href="#dialog" name="modal">Вызов модального окна</a>
-
-	<!-- Само окно -->
-	<div id="boxes">  
-	<div id="dialog" class="window"> Текст модального окна
-	<div class="top"><a href="#" class="link close"/>Закрыть</a></div>
-	<div class="content">Текст в модальном окне.</div>
-	</div>
-	</div>
-
-	<!-- Маска, затемняющая фон -->
-	<div id="mask"></div>
+	
 
 
 
@@ -347,32 +350,7 @@
 	<script type="text/javascript" language="javascript" src="js/script.js"></script>	
 
 
-	<script>
-		$(document).ready(function() {   
-		    $('a[name=modal]').click(function(e) {
-		    e.preventDefault();
-		    var id = $(this).attr('href');
-		    var maskHeight = $(document).height();
-		    var maskWidth = $(window).width();
-		    $('#mask').css({'width':maskWidth,'height':maskHeight});
-		    $('#mask').fadeIn(1000); 
-		    $('#mask').fadeTo("slow",0.8); 
-		    var winH = $(window).height();
-		    var winW = $(window).width();
-		    $(id).css('top',  winH/2-$(id).height()/2);
-		    $(id).css('left', winW/2-$(id).width()/2);
-		    $(id).fadeIn(2000); 
-		    });
-		    $('.window .close').click(function (e) { 
-		    e.preventDefault();
-		    $('#mask, .window').hide();
-		    }); 
-		    $('#mask').click(function () {
-		    $(this).hide();
-		    $('.window').hide();
-		    }); 
-		   });  
-	</script>
+	
 
 	<script id="sfeatures_mini" type="text/x-handlebars-template">
 		{{#each blocks}}
