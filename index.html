@@ -112,6 +112,8 @@
 				</div>
 			</div>
 			<div class="features" id="features">
+
+
 				<!-- <div class="features_mini">
 					<img class="features_img" src="./images/features/1.png">
 					<span class="features_mini2"> 
@@ -154,8 +156,8 @@
 			</div>
 
 			<div class="block_general">
-				<div class="block_big">
-					<div class="block">
+				<div class="block_big" id="block_big1">
+					<!-- <div class="block">
 						<span>
 							<img class="ipnone_img_mini" src="./images/iPhone/1.gif">
 						</span>
@@ -183,7 +185,7 @@
 						<p class="iphone_text_mini">
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
 						</p>
-					</div>
+					</div> -->
 
 
 				</div>
@@ -198,8 +200,8 @@
 
 
 
-				<div class="block_big">
-					<div class="block">
+				<div class="block_big" id="block_big2">
+					<!-- <div class="block">
 						<span>
 							<img class="ipnone_img_mini" src="./images/iPhone/4.gif">
 						</span>
@@ -229,7 +231,7 @@
 							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
 						</p>
 					</div>
-
+ -->
 
 
 				</div>
@@ -265,7 +267,7 @@
 			</div>
 		
 
-			<div class="galery_img_big">
+			<div class="galery_img_big" id="galery_img_big">
 				<div class="galery_img" id="galery_img_1">
 					<!-- <a href="#"><img class="img_galery" src="./images/galery/1.gif"></a>	
 					<a href="#"><img src="./images/galery/3.gif"></a>
@@ -306,8 +308,8 @@
 				</p>
 			</div>
 
-			<div class="meet_img">
-					<div class="meet_img_mini">
+			<div class="meet_img" id="meet_img">
+					<!-- <div class="meet_img_mini">
 						<div class="meet_rod">
 							<a class="meet_img_mini_2" href="#"><img src="./images/meet/01.jpg" height="250" width="225"></a>
 							<div class="meet_img_text">
@@ -408,7 +410,7 @@
 						<p class="meet_text_2">Sr. UI Designer</p>
 					</div>
 					
-				</div>
+				</div> -->
 		</div>
 
 
@@ -420,8 +422,8 @@
 				</div>				
 			</div>
 
-			<div class="some_img">	
-				<div class="some_img_mini">
+			<div class="some_img" id="some_img">	
+				<!-- <div class="some_img_mini">
 					<div>
 						<a href="#"><img class="some_img_mini_2" src="./images/Some_Fun_Facts/1.png"></a>
 					</div>
@@ -451,7 +453,7 @@
 					</div>
 					<p class="some_text_1">42</p>
 					<p class="some_text_2">AWARDS WON</p>
-				</div>
+				</div> -->
 			
 			</div>
 
@@ -582,7 +584,7 @@
 	<script type="text/javascript" src="js/handlebars.js"></script>
 	<script type="text/javascript" language="javascript" src="js/script.js"></script>	
 
-	<script type="text/x-handlebars-template">
+	<script id="sfeatures_mini" type="text/x-handlebars-template">
 		{{#each blocks}}
 		<div class="features_mini">
 			<img class="features_img" src="{{src}}">
@@ -592,16 +594,85 @@
 		{{/each}}
 	</script>
 
+
+	<script id="sgalery_img" type="text/x-handlebars-template">
+		{{#each features1}}
+			<a href="#"><img src="{{src}}"></a>
+		{{/each}}
+	</script>
+
+	<script id="sgalery_img2" type="text/x-handlebars-template">
+		{{#each features2}}
+			<a href="#"><img src="{{src}}"></a>
+		{{/each}}
+	</script>
+
+
+	<script id="siphone_block1" type="text/x-handlebars-template">
+		{{#each iphone_block1}}
+		<div class="block">
+				<span><img class="ipnone_img_mini" src="{{src}}"></span>
+				<span class="h">{{h}}</span>
+				<p class="iphone_text_mini">{{text}}</p>
+		</div>
+		{{/each}}
+	</script>
+
+	<script id="siphone_block2" type="text/x-handlebars-template">
+		{{#each iphone_block2}}
+		<div class="block">
+				<span><img class="ipnone_img_mini" src="{{src}}"></span>
+				<span class="h">{{h}}</span>
+				<p class="iphone_text_mini">{{text}}</p>
+		</div>
+		{{/each}}
+	</script>
+
+
+	<script id="smeet_img_mini" type="text/x-handlebars-template">
+		{{#each meet_img_mini}}
+		<div class="meet_img_mini">
+						<div class="meet_rod">
+							<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
+							<div class="meet_img_text">
+								<div class="meet_img_text2"> <p>{{text2_1}}</p>
+									<p> </p>
+									<p>{{text2_2}}</p>
+									{{text2_3}}
+								</div>
+								<div class="meet_social">
+									<ul>
+										<li><a href="#"><img src="{{tv}}"></a></li>
+										<li><a href="#"><img src="{{fb}}"></a></li>
+										<li><a href="#"><img src="{{gg}}"></a></li>
+									</ul>
+								</div>
+							</div> 
+						</div>
+
+						<p class="meet_text_1">{{meet_text_1}}</p>
+						<p class="meet_text_2">{{meet_text_2}}</p>
+					</div>
+		{{/each}}
+	</script>
+
+
+	<script id="ssome_img_mini" type="text/x-handlebars-template">
+		{{#each some_img_mini}}
+		<div class="some_img_mini">
+					<div>
+						<a href="#"><img class="some_img_mini_2" src="{{src}}"></a>
+					</div>
+					<p class="some_text_1">{{text1}}</p>
+					<p class="some_text_2">{{text2}}</p>
+				</div>
+		{{/each}}
+	</script>
+
 <!-- 
-		<div class="features_mini">
-			<img class="features_img" src="./images/features/2.png">
-			<span class="features_mini2"> 
-				Development
-			</span>
-			<div class="features_text">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
-			</div>
-		</div> -->
+
+ -->
+
 
 </body>
 </html>
