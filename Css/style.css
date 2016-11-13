@@ -882,12 +882,149 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 
+.single-picture{
+  display: none;
+}
+.single-picture.visible{
+  display: block;
+}
+.single-picture .preview-large{
+  position: fixed;
+  top: 20%;
+  left: 35%;
+
+  width: 600px;
+  height: 400px;
+
+  background: white;
+  box-shadow:100px black;
+  z-index: 500;
+}
+
+.single-picture .overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.6);
+  z-index: 400;
+}
+
+
+.h3 {
+  font-family: "Lato-Black", Arial, sans-serif;
+  text-align: left;
+  font-size: 20px;
+  /*color: #4c76ff;*/
+  color: white;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.single-picture .cl_close {
+  display: block;
+  background: #0085cc;
+  height: 50px;
+}
+
+.single-picture .close {
+  font-family: "Lato-Black", Arial, sans-serif;
+  cursor: pointer;
+  //position: fixed;
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  /*color: #4c76ff;*/
+  color: black;
+}
+
+.single-picture .close:hover {
+  color: gray;
+  text-decoration:underline;
+
+
+}
 
 
 
+.page_img {
+  text-align: center;
+  margin-top: 20px;
+}
 
 
+.page_p {
+  font-family: "Open-Sans", Arial, sans-serif;
+  margin-top: 20px;
+}
 
+.page_close {
+  height: 40px; 
+}
+
+.page_max_text {
+  font-family: "Open-Sans-Bold", Arial, sans-serif;
+
+}
+
+.picture_open:hover {
+ background: rgba(0, 0, 0, 0.7);
+}
+
+/*-------------------------------------
+-------------------------------------*/
+
+
+ body {
+    font-family:verdana;
+    font-size:15px;
+    }  
+    .link {color:#fff; text-decoration:none}
+    .link:hover {color:#fff; text-decoration:underline}  
+#mask {
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:9000;
+    background-color:#000;
+    display:none;
+    }
+#boxes .window {
+    position:absolute;
+    left:0;
+    top:0px;
+    -top: 40px;
+    width:440px;
+    height:200px;
+    display:none;
+    z-index:9999;
+    padding: 20px;
+    overflow: hidden;
+    }  
+#boxes #dialog {
+    width:375px; 
+    height:203px;
+    padding:10px;
+    background-color:#ffffff;
+    }  
+.top {
+    position:absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:30px;
+    background: #0085cc;
+    padding: 8px 20px 6px 10px;
+    }
+.close {
+    float:right;
+    }
+.content {
+    padding-top: 35px;
+}
 
 
 

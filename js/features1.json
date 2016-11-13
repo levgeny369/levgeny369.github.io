@@ -1,0 +1,36 @@
+{
+        
+  "features1": [
+    {
+        "src": "./images/galery/1.gif"
+    },
+    {
+        "src": "./images/galery/2.gif"
+    },
+    {
+        "src": "./images/galery/3.gif"
+    },
+    {
+        "src": "./images/galery/4.gif"
+    }
+  ],
+
+     
+  "features2": [
+    {
+        "src": "./images/galery/5.gif"
+    },
+    {
+        "src": "./images/galery/6.gif"
+    },
+    {
+        "src": "./images/galery/7.jpg"
+    },
+    {
+        "src": "./images/galery/8.jpg"
+    }
+  ],
+
+
+}
+
