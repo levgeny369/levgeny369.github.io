@@ -24,9 +24,6 @@
 	<title>Sarajevo</title>
 
 	<link rel="stylesheet" type="text/css" href="Css/style.css">
-	<link rel="stylesheet" type="text/css" href="Css/style_2.css">
-
-	<!-- <div onclick="hide(this)">foobar</div> -->
 
 	<script type="text/javascript" language="javascript" src="js/jquery-3.1.1.min.js"></script>
 	
@@ -281,7 +278,7 @@
 
 
 		<div class="meet_maps">
-			
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
 		</div>
 
 
@@ -331,6 +328,7 @@
 
 		<div class="overlay"></div>
 
+		
 		<div class="preview-large">
 			<div class="cl_close">
 				<a class="close"><img class="page_close" src="images/zakryt.png"/></a>
@@ -342,12 +340,8 @@
 			</div>
 			<h3 class="page_max_text"></h3>
 			<p class="page_p"></p>
-
-
-
-
-			
 		</div>
+		
 
 	</div>
 
@@ -370,15 +364,37 @@
 
 	<script id="sgalery_img" type="text/x-handlebars-template">
 		{{#each features1}}
-			<a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a>
+			<div class="galery_block">
+				<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
+				<img class='picture_open' index='{{id}}' src="{{src}}">
+				<div class="galery_hover" index='{{id}}'>
+					<img class="galery_hover_img" id="galery_hover_img" src="{{src_hover}}">
+					<p id="galery_text1">{{galery_text1}}</p>
+					<p id="galery_text2">{{galery_text2}}</p>
+				</div>
+			</div>
 		{{/each}}
 	</script>
 
 	<script id="sgalery_img2" type="text/x-handlebars-template">
 		{{#each features2}}
-			<a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a>
+			<div class="galery_block">
+				<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
+				<img class='picture_open' index='{{id}}' src="{{src}}">
+				<div class="galery_hover2">
+					<img class="galery_hover_img" src="{{src_hover}}">
+					<p id="galery_text1">{{galery_text1}}</p>
+					<p id="galery_text2">{{galery_text2}}</p>
+				</div>
+			</div>
 		{{/each}}
 	</script>
+
+	<!-- <script id="sgalery_img2" type="text/x-handlebars-template">
+		{{#each features2}}
+			<a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a>
+		{{/each}}
+	</script> -->
 
 
 	<script id="siphone_block1" type="text/x-handlebars-template">
@@ -405,27 +421,27 @@
 	<script id="smeet_img_mini" type="text/x-handlebars-template">
 		{{#each meet_img_mini}}
 		<div class="meet_img_mini">
-						<div class="meet_rod">
-							<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
-							<div class="meet_img_text">
-								<div class="meet_img_text2"> <p>{{text2_1}}</p>
-									<p> </p>
-									<p>{{text2_2}}</p>
-									{{text2_3}}
-								</div>
-								<div class="meet_social">
-									<ul>
-										<li><a href="#"><img src="{{tv}}"></a></li>
-										<li><a href="#"><img src="{{fb}}"></a></li>
-										<li><a href="#"><img src="{{gg}}"></a></li>
-									</ul>
-								</div>
-							</div> 
-						</div>
-
-						<p class="meet_text_1">{{meet_text_1}}</p>
-						<p class="meet_text_2">{{meet_text_2}}</p>
+			<div class="meet_rod">
+				<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
+				<div class="meet_img_text">
+					<div class="meet_img_text2"> <p>{{text2_1}}</p>
+						<p> </p>
+						<p>{{text2_2}}</p>
+						{{text2_3}}
 					</div>
+					<div class="meet_social">
+						<ul>
+							<li><a href="#"><img src="{{tv}}"></a></li>
+							<li><a href="#"><img src="{{fb}}"></a></li>
+							<li><a href="#"><img src="{{gg}}"></a></li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+
+			<p class="meet_text_1">{{meet_text_1}}</p>
+			<p class="meet_text_2">{{meet_text_2}}</p>
+		</div>
 		{{/each}}
 	</script>
 

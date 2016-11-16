@@ -29,14 +29,16 @@ $(function () {
 
 	});
 
-	$('body').on('click','.picture_open',function(e) {
+	$('body').on('click','.galery_hover',function(e) {
 		e.preventDefault()
 		$('.single-picture').addClass('visible');
 
 		var index = $(this).attr('index');
-		for (var i = 0; i  <= pictures.length; i++) {
+		for (var i = 0; i  < pictures.length; i++) {
 			// console.log(pictures.length)
 			// console.log(pictures[i].id==index)
+			console.log(pictures[i].id);
+			console.log(index);
 			if(pictures[i].id == index){
 				$('.preview-large #page_img').attr('src',pictures[i].src);
 				$('.preview-large h3').text(pictures[i].text);

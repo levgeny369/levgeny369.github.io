@@ -24,45 +24,71 @@
         "id":"1",
         "src": "./images/galery/1.gif",
         "text": "Резюме 1",
-        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов."
+        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     { 
         "id":"2",
         "src": "./images/galery/2.gif",
         "text": "Резюме 2",
-        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов."
+        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     {
         "id":"3",
         "src": "./images/galery/3.gif",
         "text": "Резюме 3",
-        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов."
+        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     {
         "id":"4",
         "src": "./images/galery/4.gif",
         "text": "Резюме 4",
-        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов."
+        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     }
   ],
 
      
   "features2": [
     {
+        "id":"5",
         "src": "./images/galery/5.gif",
-        "text": "Резюме 5"
+        "text": "Резюме 5",
+        "inf" : "Текст (от лат. textus — «ткань; сплетение, связь, сочетание») — зафиксированная на каком-либо материальном носителе человеческая мысль; в общем плане связная и полная последовательность символов.",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     {
         "src": "./images/galery/6.gif",
-        "text": "Резюме 6"
+        "text": "Резюме 6",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     {
         "src": "./images/galery/7.jpg",
-        "text": "Резюме 7"
+        "text": "Резюме 7",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     },
     {
         "src": "./images/galery/8.jpg",
-        "text": "Резюме 8"
+        "text": "Резюме 8",
+        "src_hover" : "./images/galery/hover.png",
+        "galery_text1" : "Labore et dolore magnam",
+        "galery_text2" : "Photography"
     }
   ],
 
