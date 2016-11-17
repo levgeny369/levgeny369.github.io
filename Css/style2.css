@@ -50,36 +50,38 @@ table {
 ---------------------------
 ---------------------------
 */
-
+/*
 @font-face {
-    font-family: Open-Sans; /* имя шрифта для CSS правил */
-    src: local("Open-Sans"), /* проверяем наличие шрифта в ОС пользователя */
-         url(../fonts/open-sans.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Open-Sans; 
+    src: local("Open-Sans"), 
+         url(../fonts/open-sans.ttf);
   }
 
 @font-face {
-    font-family: Open-Sans-Semibold; /* имя шрифта для CSS правил */
-    src: local("Open-Sans-Semibold"), /* проверяем наличие шрифта в ОС пользователя */
-         url(../fonts/open-sans-semibold.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Open-Sans-Semibold; 
+    src: local("Open-Sans-Semibold"),
+         url(../fonts/open-sans-semibold.ttf);
   }
 
 @font-face {
-    font-family: Lato-Black; /* имя шрифта для CSS правил */
-    src: local("Lato-Black"), /* проверяем наличие шрифта в ОС пользователя */
-         url(../fonts/Lato-Black.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Lato-Black;
+    src: local("Lato-Black"), 
+         url(../fonts/Lato-Black.ttf); 
   }
 
 @font-face {
-    font-family: Lato-Thin; /* имя шрифта для CSS правил */
-    src: local("Lato-Thin"), /* проверяем наличие шрифта в ОС пользователя */
-         url(../fonts/Lato-Thin.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Lato-Thin;
+    src: local("Lato-Thin"), 
+         url(../fonts/Lato-Thin.ttf);
   }
 
 @font-face {
-    font-family: Open-Sans-Bold; /* имя шрифта для CSS правил */
-    src: local("open-sans-bold"), /* проверяем наличие шрифта в ОС пользователя */
-         url(../fonts/open-sans-bold.ttf); /* если шрифт не установлен, тогда загружаем его по указанному пути */
+    font-family: Open-Sans-Bold; 
+    src: local("open-sans-bold"), 
+         url(../fonts/open-sans-bold.ttf); 
   }
+*/
+
 /*
 ---------------------------
 ---------------------------
@@ -103,7 +105,7 @@ body{
 }
 
 .top_header {
-	display: flex;
+  display: flex;
   justify-content: space-between;
   background: rgba(20, 20, 230, 0.1);
   flex-wrap: wrap;

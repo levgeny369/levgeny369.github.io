@@ -5,6 +5,9 @@ else
 document.getElementById(id_div).style.display = "block";
 };
 
+
+localStorage.setItem('name', '1');
+
 function generateAllProductsHTML(data,idTemplate,boxClass){
 	
 	var theTemplate = Handlebars.compile ($(idTemplate).html());
