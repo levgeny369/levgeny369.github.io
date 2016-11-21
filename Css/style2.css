@@ -118,7 +118,7 @@ body{
 
 
 .logo {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: 'Lato_black';/*, Arial, sans-serif;*/
   font-size: 20.8px;
   color: white;
   /*//margin: 25px 50px 10px 98px;*/
@@ -151,7 +151,7 @@ body{
 .menu > ul > li {
     display: inline-block;
     list-style: none;
-    font-family: "Lato-Thin", Arial, sans-serif;
+    font-family: "Lato_thin", Arial, sans-serif;
     font-size: 12px;
     color: white;
     
@@ -187,7 +187,7 @@ body{
 }
 
 .header_title {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: "Lato_black", Arial, sans-serif;
   font-size: 62px;
   color: white;
   text-align: center;
@@ -195,7 +195,7 @@ body{
 
 .header_sub_title {
   /*//display: block;*/
-  font-family: "Lato-Thin", Arial, sans-serif;
+  font-family: 'Lato_thin', Arial, sans-serif;
   font-size: 48px;
   text-align: center;
   color: white;
@@ -205,7 +205,7 @@ body{
 }
 
 .header_bot_title {
-  font-family: "Lato-Thin", Arial, sans-serif;
+  font-family: "Lato_thin", Arial, sans-serif;
   font-size: 18px;
   color: white;
   margin:35px auto;
@@ -257,7 +257,7 @@ body{
 
 
 .features_mini {
-  font-family: "Open Sans Semibold", Arial, sans-serif;
+  font-family: "Open_sans_semibold", Arial, sans-serif;
 
   /*width: 320px;*/
   width: 20%;
@@ -270,13 +270,13 @@ body{
 }
 
 .features_mini2 {
-  font-family: "Open-Sans-Semibold", Arial, sans-serif;
+  font-family: "Open_sans_semibold", Arial, sans-serif;
   font-size: 16px;
   color: #000;
 }
 
 .H1 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: "Lato_black", Arial, sans-serif;
   font-size: 28px;
   color: #4c76ff;
   padding: 100px 0;
@@ -290,7 +290,7 @@ body{
 
 }
 .features_text {
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
   margin-left: 51px;
   width: 100%;
 
@@ -307,7 +307,7 @@ body{
 }
 
 .iphone_text {
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
   font-size: 15.08px;
   text-align: center;
   margin-top: 90px;
@@ -345,7 +345,7 @@ body{
   padding: 5%;
   margin-bottom: 20%;
   width: 100%;
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
   cursor: pointer;
 
 
@@ -356,6 +356,7 @@ body{
 }
 
 .iphone_text_mini {
+  font-family: "Open_sans", Arial, sans-serif;
   /*//display: inline-block;*/
   /*//text-align: center;*/
   /*//margin-left: 72px;*/
@@ -365,7 +366,7 @@ body{
 }
 
 .h {
-  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-family: "Open_sans_bold", Arial, sans-serif;
 }
 
 .ipnone_img_mini {
@@ -380,7 +381,7 @@ body{
 }
 
 .H1_1 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: "Lato_black", Arial, sans-serif;
   margin-top: 100px; 
   font-size: 28px;
   color: #4c76ff;
@@ -388,7 +389,7 @@ body{
 }
 
 .works_text {
-  font-family: "Lato-Thin", Arial, sans-serif;
+  font-family: "Lato_thin", Arial, sans-serif;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 70px;
@@ -409,7 +410,7 @@ body{
 .galery > ul > li {
     display: inline-block;
     list-style: none;
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-family: 'Lato_black', Arial, sans-serif;
     font-size: 14px;
     color: black;
     
@@ -477,7 +478,7 @@ body{
   font-size: 13.27px;
   text-align: center;
   vertical-align: center;
-  font-family: 'Open Sans Regular', sans-serif;
+  font-family: 'Open_sans', sans-serif;
   cursor: pointer;
 }
 
@@ -506,7 +507,7 @@ body{
   font-size: 13.27px;
   text-align: center;
   vertical-align: center;
-  font-family: 'Open Sans Regular', sans-serif;
+  font-family: 'Open_sans', sans-serif;
 }
 
 .galery_hover2 img {
@@ -525,13 +526,13 @@ body{
 
 #galery_text1 {
   font-size: 13px;
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
   margin-bottom: 5px;
 }
 
 #galery_text2 {
   font-size: 10px;
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
 }
 
 
@@ -573,14 +574,14 @@ body{
   margin-bottom: 13px;
   text-align: center;
   font-size: 14.93px;
-  font-family: 'Open-Sans-Semibold', sans-serif;  
+  font-family: 'Open_sans', sans-serif;  
 }
 
 .meet_text_2 {
   text-align: center;
   color: #959a9f;
   font-size: 10.78px;
-  font-family: 'Open Sans', sans-serif;  
+  font-family: 'Open_sans', sans-serif;  
   margin-bottom: 30px;
 }
 
@@ -612,7 +613,7 @@ body{
   text-align: center;
   vertical-align: center;
 
-  font-family: 'Open Sans Regular', sans-serif;  
+  font-family: 'Open_sans', sans-serif;  
 
 }
 
@@ -670,7 +671,7 @@ body{
 
 
 .H1_2 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: "Lato_black", Arial, sans-serif;
   margin-top: 100px;
   padding-top: 75px; 
   font-size: 20.91px;
@@ -714,7 +715,7 @@ body{
 }
 
 .some_text_1 {
-  font-family: "Open-Sans-Semibold", Arial, sans-serif;
+  font-family: 'Open_sans_semibold', Arial, sans-serif;
   font-size: 44.8px;
   color: white;
   margin-top: 35px;
@@ -723,13 +724,13 @@ body{
 }
 
 .some_text_2 {
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: 'Open_sans', Arial, sans-serif;
   font-size: 13.44px;
   color: white;
 }
 
 .H1_3 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: 'Lato_black', Arial, sans-serif;
   margin-top: 80px;
   font-size: 28px;
   color: #4c76ff;
@@ -737,7 +738,7 @@ body{
 }
 
 .some_text {
-  font-family: "Lato-Thin", Arial, sans-serif;
+  font-family: 'Lato_thin', Arial, sans-serif;
   font-size: 14.96px;
   text-align: center;
   margin-top: 40px;
@@ -747,7 +748,7 @@ body{
 
 .some_text_inf {
   font-size: 18.35px;
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: "Open_sans", Arial, sans-serif;
 }
 .some_block_inf {
   font-size: 10.84px;
@@ -842,7 +843,7 @@ body{
 }
 .some_botom a {
   text-decoration: none;
-  font-family: "Open-Sans", sans-serif; 
+  font-family: 'Open_sans', sans-serif; 
   color: black;
 }
 
@@ -876,7 +877,7 @@ body{
 }
 
 .footer_text {
-font-family: "Lato-Thin", sans-serif; 
+font-family: 'Lato_thin', sans-serif; 
 }
 
 .footer_block_1 {
@@ -955,7 +956,7 @@ font-family: "Lato-Thin", sans-serif;
 
 .footer_h1 {
 
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: 'Lato_black', Arial, sans-serif;
   font-size: 26.72px;
   color: white;
   /*margin-bottom: 40px;*/
@@ -965,7 +966,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .footer_h2 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: "Lato_black", Arial, sans-serif;
   font-size: 18px;
   /*margin-bottom: 40px;*/
   margin-bottom: 5%;
@@ -1004,7 +1005,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .h3 {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: 'Lato_black', Arial, sans-serif;
   text-align: left;
   font-size: 20px;
   color: white;
@@ -1020,7 +1021,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .single-picture .close {
-  font-family: "Lato-Black", Arial, sans-serif;
+  font-family: 'Lato_black', Arial, sans-serif;
   cursor: pointer;
   margin-right: 10px;
   margin-top: 10px;
@@ -1041,7 +1042,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .page_p {
-  font-family: "Open-Sans", Arial, sans-serif;
+  font-family: 'Open_sans', Arial, sans-serif;
   margin-top: 20px;
   margin-left: 30px;
   width: 80%;
@@ -1053,7 +1054,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .page_max_text {
-  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  font-family: 'Open_sans_bold', Arial, sans-serif;
   margin-left: 10px;
 
 }
@@ -1088,7 +1089,7 @@ font-family: "Lato-Thin", sans-serif;
   .menu > ul > li {
       display: inline-block;
       list-style: none;
-      font-family: "Lato-Thin", Arial, sans-serif;
+      /*font-family: 'Lato_thin', Arial, sans-serif;*/
       font-size: 12px;
       color: white;
       
@@ -1121,7 +1122,7 @@ font-family: "Lato-Thin", sans-serif;
   }
 
   .header_title {
-    font-family: "Lato-Black", Arial, sans-serif;
+    /*font-family: 'Lato_black', Arial, sans-serif;*/
     font-size: 45px;
     color: white;
     text-align: center;
@@ -1129,7 +1130,7 @@ font-family: "Lato-Thin", sans-serif;
 
   .header_sub_title {
     /*//display: block;*/
-    font-family: "Lato-Thin", Arial, sans-serif;
+    /*font-family: 'Lato_thin', Arial, sans-serif;*/
     font-size: 35px;
     text-align: center;
     color: white;
@@ -1204,7 +1205,7 @@ font-family: "Lato-Thin", sans-serif;
 
 .iphone_text_mini{
   font-size: 10px;
-  margin-left: 18%;
+  margin-left: 52px;
 }
 
 
@@ -1280,7 +1281,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .some_text_1 {
-  font-family: "Open-Sans-Semibold", Arial, sans-serif;
+  /*font-family: 'Open_sans_semibold', Arial, sans-serif;*/
   font-size: 30px;
   color: white;
   margin-top: 35px;
@@ -1289,7 +1290,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .some_text_2 {
-  font-family: "Open-Sans", Arial, sans-serif;
+  /*font-family: 'Open_sans', Arial, sans-serif;*/
   font-size: 8px;
   color: white;
 }
@@ -1469,7 +1470,7 @@ font-family: "Lato-Thin", sans-serif;
   }
 
   .header_title {
-    font-family: "Lato-Black", Arial, sans-serif;
+    font-family: 'Lato_black', Arial, sans-serif;
     font-size: 45px;
     color: white;
     text-align: center;
@@ -1477,7 +1478,7 @@ font-family: "Lato-Thin", sans-serif;
 
   .header_sub_title {
     /*//display: block;*/
-    font-family: "Lato-Thin", Arial, sans-serif;
+    font-family: 'Lato_thin', Arial, sans-serif;
     font-size: 35px;
     text-align: center;
     color: white;
@@ -1535,7 +1536,7 @@ font-family: "Lato-Thin", sans-serif;
 
 
 .features_mini {
-  font-family: "Open Sans Semibold", Arial, sans-serif;
+  /*font-family: "Open Sans Semibold", Arial, sans-serif;*/
 
   /*width: 320px;*/
   width: 80%;
@@ -1552,7 +1553,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .features_mini2 {
-  font-family: "Open-Sans-Semibold", Arial, sans-serif;
+  /*font-family: "Open-Sans-Semibold", Arial, sans-serif;*/
   font-size: 25px;
   color: #000;
 }
@@ -1621,7 +1622,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .h {
-  font-family: "Open-Sans-Bold", Arial, sans-serif;
+  /*font-family: "Open-Sans-Bold", Arial, sans-serif;*/
 }
 
 .ipnone_img_mini {
@@ -1725,7 +1726,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .some_text_1 {
-  font-family: "Open-Sans-Semibold", Arial, sans-serif;
+  /*font-family: "Open-Sans-Semibold", Arial, sans-serif;*/
   font-size: 50px;
   color: white;
   margin-top: 35px;
@@ -1734,7 +1735,7 @@ font-family: "Lato-Thin", sans-serif;
 }
 
 .some_text_2 {
-  font-family: "Open-Sans", Arial, sans-serif;
+  /*font-family: "Open-Sans", Arial, sans-serif;*/
   font-size: 20px;
   color: white;
 }
