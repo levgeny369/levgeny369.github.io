@@ -874,7 +874,7 @@ body{
   -o-background-size: cover; /* Opera 9.6+ */
   background-size: cover; /* Современные браузеры */
   background-repeat: no-repeat;
-  height: 320px;
+  height: 250px;
 }
 
 .footer {
