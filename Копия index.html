@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mymodule">
+<head>
+	<meta charset="UTF-8">
+
+	<style>
+		input[type="text"]:focus { outline: none; }
+
+	</style>
+
+	
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Sarajevo</title>	
+	
+	 <script async>function loadFont(a,b,c){function d(){if(!window.FontFace)return!1;var a=new FontFace("t",'url("data:application/font-woff2,") format("woff2")');return a.load(),"loading"===a.status}var e=navigator.userAgent,f=!window.addEventListener||e.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!e.match(/Chrome/);if(!f){var g={};try{g=localStorage||{}}catch(h){}var i="x-font-"+a,j=i+"url",k=i+"css",l=g[j],m=g[k],n=document.createElement("style");if(n.rel="stylesheet",document.head.appendChild(n),!m||l!==b&&l!==c){var o=c&&d()?c:b,p=new XMLHttpRequest;p.open("GET",o),p.onload=function(){p.status>=200&&p.status<400&&(g[j]=o,g[k]=n.textContent=p.responseText)},p.send()}else n.textContent=m}}</script>
+
+
+	<script async>
+		
+		loadFont('lato', '/fonts/stylelato.css', '/fonts/stylelato2.css');
+		loadFont('lato', '/fonts/style_open_sans.css', '/fonts/style_open_sans2.css');
+
+	</script>
+
+
+
+</head>
+<body  ng-controller="BloksCtrl">
+		<header class="header">
+
+			<a class="menu_mini_2" id="menu_mini_2" href="#" onclick="secret('menu_mini')"><img class="menu_mini_img" src="images/g.png"></a>
+
+			
+			<div id="menu_mini" style="display:none;" ng-controller="BloksCtrl">
+					<ul>
+						<li><a href="#">{{menu.Home}}</a></li>
+						<li><a href="#">{{menu.Features}}</a></li>
+						<li><a href="#">{{menu.Works}}</a></li>
+						<li><a href="#">{{menu.Team}}</a></li>
+						<li><a href="#">{{menu.Contact}}</a></li>
+					</ul>
+
+			</div>
+
+
+			<nav class="top_header">
+				<div class="logo">
+					sarajevo<span class="point">.</span>
+				</div>
+				
+				<div class="menu">
+					<ul>
+						<li><a href="#">{{menu.Home}}</a></li>
+						<li><a href="#">{{menu.Features}}</a></li>
+						<li><a href="#">{{menu.Works}}</a></li>
+						<li><a href="#">{{menu.Team}}</a></li>
+						<li><a href="#">{{menu.Contact}}</a></li>
+					</ul>
+				</div>
+			</nav>
+
+
+		
+
+
+
+			<div class="down_header">
+				<div class="title">
+					<div class="header_title">
+						sarajevo<span class="point">.</span>
+					</div>
+
+					<div class="header_sub_title">
+						<span class="point">/creative</span> one page template.
+					</div>
+
+					<div class="header_bot_title">
+						We are a team of professionals
+					</div>
+				</div>
+
+				<div class="big_social">
+					<div class="social">
+						
+						<a href="#"><img src="./images/social/twitter.gif"></a>
+						<a href="#"><img src="./images/social/facebook.gif"></a>
+						<a href="#"><img src="./images/social/google+.gif"></a>
+						<a href="#"><img src="./images/social/dribbble.gif"></a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+<!-- FUTURES-->
+
+		<div class="features_big" ng-controller="BloksCtrl">
+			<div class="H1">FEATURES
+				<div class="shape">
+					<img class="shape_img" src="./images/features/Shape.gif">
+				</div>
+			</div>
+			<div class="features" id="features">
+				
+				<div class="features_mini" ng-repeat="block in blocks">
+					<img class="features_img" ng-src="{{block.src}}">
+					<span class="features_mini2">{{block.features_mini2}}</span>
+					<div class="features_text">{{block.features_text}}</div>
+				</div>
+		
+	</script>
+
+			</div>
+		</div>
+
+<!-- iPhone-->
+
+		<div class="iphone">
+			<div class="iphone_text">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem 
+				<p class="iphone_abz">aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
+			</div>
+
+			<div class="block_general" ng-controller="BloksCtrl">
+				<div class="block_big" id="block_big1">
+					<div class="block" ng-repeat="block in iblocks">
+						<span>
+							<img class="ipnone_img_mini" ng-src="{{block.src}}">
+						</span>
+						<span class="h">{{block.h}}</span>
+						<p class="iphone_text_mini">
+							{{block.text}}
+						</p>
+					</div>	
+				</div>
+
+				<div class="ciphone">
+					<div>
+						<img class="iphone_img" src="./images/iPhone/iphone.jpg">
+					</div>
+				</div>
+
+				<div class="block_big" id="block_big2">
+					<div class="block" ng-repeat="block in iblocks2">
+						<span>
+							<img class="ipnone_img_mini" ng-src="{{block.src}}">
+						</span>
+						<span class="h">{{block.h}}</span>
+						<p class="iphone_text_mini">
+							{{block.text}}
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+<!-- KS-->
+		<div class="works">
+			<div class="H1_1">
+				WORKS
+				<div class="shape">
+					<img class="shape_img" src="./images/features/Shape.gif">
+				</div>				
+			</div>
+
+			<div class="works_text">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, 
+				<p>
+					eaque ipsa quae ab illo inventore
+				</p>
+			</div>
+
+			<div class="galery">
+				<ul>
+					<li><a href="#">All</a></li>
+					<li><a href="#">Branding</a></li>
+					<li><a href="#">Web</a></li>
+					<li><a href="#">Logo Design</a></li>
+					<li><a href="#">Photography</a></li>
+				</ul>
+			</div>
+		
+
+			<div class="galery_img_big" id="galery_img_big"  ng-controller="BloksCtrl">
+				<div class="galery_img" id="galery_img_1">
+					<div class="galery_block" ng-repeat="block in galery_mini1">
+						
+						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<div class="galery_hover" index='{{id}}'>
+							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<p id="galery_text1">{{block.galery_text1}}</p>
+							<p id="galery_text2">{{block.galery_text2}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="galery_img" id="galery_img_2">
+					<div class="galery_block" ng-repeat="block in galery_mini2">
+						
+						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<div class="galery_hover" index='{{id}}'>
+							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<p id="galery_text1">{{block.galery_text1}}</p>
+							<p id="galery_text2">{{block.galery_text2}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<div class="clear"></div>
+
+
+		<!-- Meet Our Team-->
+
+		<div class="Meet">
+			<div class="H1_1">
+				MEET OUR TEAM
+				<div class="shape">
+					<img class="shape_img" src="./images/features/Shape.gif">
+				</div>				
+			</div>
+
+
+
+			<div class="works_text">
+				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque 
+				<p>
+					ipsa quae ab illo inventore
+				</p>
+			</div>
+
+			<div class="meet_img" id="meet_img" ng-controller="BloksCtrl">
+				<div class="meet_img_mini" ng-repeat="block in meet_img_mini">
+					<div class="meet_rod">
+						<a class="meet_img_mini_2" href="#"><img src="{{block.src}}" height="250" width="225"></a>
+						<div class="meet_img_text">
+							<div class="meet_img_text2"> <p>{{text2_1}}</p>
+								<p> </p>
+								<p>{{block.text2_2}}</p>
+								{{block.text2_3}}
+							</div>
+							<div class="meet_social">
+								<ul>
+									<li><a href="#"><img src="{{block.tv}}"></a></li>
+									<li><a href="#"><img src="{{block.fb}}"></a></li>
+									<li><a href="#"><img src="{{block.gg}}"></a></li>
+								</ul>
+							</div>
+						</div> 
+					</div>
+
+					<p class="meet_text_1">{{block.meet_text_1}}</p>
+					<p class="meet_text_2">{{block.meet_text_2}}</p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="some_fun_facts" ng-controller="BloksCtrl">
+			<div class="H1_2">
+				SOME FUN FACTS
+				<div class="shape_2">
+					<img class="shape_img" src="./images/features/Shape.gif">
+				</div>				
+			</div>
+
+			<div class="some_img" id="some_img">
+				<div class="some_img_mini" ng-repeat="block in some_img_mini">
+					<div>
+						<a href="#"><img class="some_img_mini_2" src="{{block.src}}"></a>
+					</div>
+					<p class="some_text_1">{{block.text1}}</p>
+					<p class="some_text_2">{{block.text2}}</p>
+				</div>
+			</div>
+
+
+		</div>
+
+
+<!---->
+	
+		<div class="H1_3">
+				LET’S DISCUSS
+				<div class="shape_2">
+					<img class="shape_img" src="./images/features/Shape.gif">
+				</div>				
+		</div>		
+
+		<div class="some_text">
+				Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+		</div>
+
+		<div class="some_forma">
+			<div class="some_block_1">
+				<div class="some_text_inf">
+					<H1>Cras at ultrices erat, sed <p class="some_h1">vulputate!</p></H1>
+
+					<p class="some_block_inf">2345 Setwant natrer, 1234, </p>
+					<p class="some_block_inf">Washington. United States.</p>
+					<p class="some_block_inf">(401) 1234 567</p>
+					<p class="some_block_inf">hello@brandi.com</p>
+					<p class="some_block_inf">ww.brandi.com</p>
+				</div>
+			</div>
+
+			
+			<div class="some_block_2">
+				<p class="some_contact_h1">Say hello!</p>
+				<div class="hole"></div>
+					<div class="some_input_1">
+						<div class="meet_input_big">
+							<input class="some_inp" type="text" value="Name" onblur="if(this.value=='') this.value='Name';" onfocus="if(this.value=='Name') this.value='';" name="Name" maxlength="20">
+							<p><img class="some_input_border" src="./images/some2/1.png"></p>
+
+						</div>
+
+						<div class="meet_input_big2">
+							<input class="some_inp" type="text" value="E-mail" onblur="if(this.value=='') this.value='E-mail';" onfocus="if(this.value=='E-mail') this.value='';" name="email" maxlength="20">
+							<p><img class="some_input_border" src="./images/some2/1.png"></p>
+						</div>
+
+
+					</div>
+
+				<div class="hole"></div>
+				
+				<div class="some_input_2">
+					
+					<input class="some_inp" type="text" value="Message" onblur="if(this.value=='') this.value='Message';" onfocus="if(this.value=='Message') this.value='';" name="message" maxlength="30">
+					<p><img class="some_input_border" src="./images/some2/1.png"></p>
+				</div>
+			</div>
+
+			<div class="some_social">
+				<ul>
+					<li><a href="#"><img class="meet_social_img" src="./images/some2/social/behance.png"></a></li>
+					<li><a href="#"><img class="meet_social_img" src="./images/some2/social/twitter1.png"></a></li>
+					<li><a href="#"><img class="meet_social_img" src="./images/some2/social/dribbble.png"></a></li>
+					<li><a href="#"><img class="meet_social_img" src="./images/some2/social/forrst.png"></a></li>
+					<li><a href="#"><img class="meet_social_img" src="./images/some2/social/google-plus.png"></a></li>
+				</ul>
+
+			</div>
+
+		</div> 
+
+		<div class="some_botom">
+			<a class="silka" href="#"><img class="meet_botom_img" src="./images/some2/Envelope.png"> Send message</a>
+		</div>
+
+
+		<div class="meet_maps">
+			<!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
+			<!-- в целях оптимизации и за неимением времени было решено временно убрать карту -->
+		</div>
+
+
+
+		
+		<div class="footer">
+			<div class="footer_block_1">
+				<div class="footer_h1">
+					sarajevo<span class="point">.</span>
+				</div>
+				<div class="footer_text">
+					eusmod tempor incididunt ut labore et dolore magna aliqua. 
+					Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+					laboris nisi ut aliquip ex ea commodo consequat.
+				</div>
+			</div>
+			<div class="footer_block_2">
+				<p class="footer_h2">Subscribe </p>
+				<input class="some_inp_new" type="text" value="E-mail" onblur="if(this.value=='') this.value='E-mail';" onfocus="if(this.value=='E-mail') this.value='';" name="email" maxlength="20">
+				<a href="#"><img class="str" src="./images/lets/str.png"></a>
+				<p class="footer_text">
+					eusmod tempor incididunt ut labore et dolore magna aliqua. 
+				</p>
+			</div>
+
+			<div class="footer_block_3">
+				<p class="footer_h2">Explore</p>
+				<div class="footer_block_3_menu">
+					<ul class="footer_text">
+						<li><a href="#">Envato</a></li>
+						<li><a href="#">Themecurve</a></li>
+						<li><a href="#">Kreativeshowcase</a></li>
+						<li><a href="#">Freebiescurve</a></li>
+					</ul>
+
+					<ul class="footer_text">
+						<li><a href="#">Themeforest</a></li>
+						<li><a href="#">Microsoft</a></li>
+						<li><a href="#">Google</a></li>
+						<li><a href="#">Yahoo</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+	<div class="single-picture page">
+
+		<div class="overlay"></div>
+
+		
+		<div class="preview-large">
+			<div class="cl_close">
+				<a class="close"><img class="page_close" src="images/zakryt.png"/></a>
+				<h2 class="h3">Resume</h2>
+			</div>
+			
+			<div class="page_img">
+				<img id="page_img" src=""/>
+			</div>
+			<h3 class="page_max_text"></h3>
+			<p class="page_p"></p>
+		</div>
+		
+
+	</div>
+
+
+
+
+	
+
+	
+
+	<link async rel="stylesheet" type="text/css" href="Css/style2.min.css">
+	<script async src="js/angular.min.js"></script>
+	<script async src="angular-app/app.js"></script>
+	<script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script async type="text/javascript">
+		window.jQuery || document.write('<script type="text/javascript" src="js/jquery-3.1.1.min.js"><\/script>');
+	</script>
+
+	<script async type="text/javascript" language="javascript" src="js/script.min.js"></script>	
+
+	
+
+	
+
+
+	
+
+</body>
+</html>
