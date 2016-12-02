@@ -118,7 +118,8 @@ body{
 
 
 .logo {
-  font-family: 'Lato_black';/*, Arial, sans-serif;*/
+  font-family: Lato;/*, Arial, sans-serif;*/
+  font-weight: 900;
   font-size: 20.8px;
   color: white;
   /*//margin: 25px 50px 10px 98px;*/
@@ -151,7 +152,8 @@ body{
 .menu > ul > li {
     display: inline-block;
     list-style: none;
-    font-family: "Lato_thin", Arial, sans-serif;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 100;
     font-size: 12px;
     color: white;
     
@@ -187,7 +189,8 @@ body{
 }
 
 .header_title {
-  font-family: "Lato_black", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   font-size: 62px;
   color: white;
   text-align: center;
@@ -195,7 +198,8 @@ body{
 
 .header_sub_title {
   /*//display: block;*/
-  font-family: 'Lato_thin', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 100;
   font-size: 48px;
   text-align: center;
   color: white;
@@ -205,7 +209,8 @@ body{
 }
 
 .header_bot_title {
-  font-family: "Lato_thin", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 100;
   font-size: 18px;
   color: white;
   margin:35px auto;
@@ -257,8 +262,8 @@ body{
 
 
 .features_mini {
-  font-family: "Open_sans_semibold", Arial, sans-serif;
-
+  font-family: Open_sans, Arial, sans-serif;
+  font-weight: 600;
   /*width: 320px;*/
   width: 20%;
   font-size: 11px;
@@ -270,13 +275,15 @@ body{
 }
 
 .features_mini2 {
-  font-family: "Open_sans_semibold", Arial, sans-serif;
+  font-family: Open_sans, Arial, sans-serif;
+  font-weight: 600;
   font-size: 16px;
   color: #000;
 }
 
 .H1 {
-  font-family: "Lato_black", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   font-size: 28px;
   color: #4c76ff;
   padding: 100px 0;
@@ -366,7 +373,8 @@ body{
 }
 
 .h {
-  font-family: "Open_sans_bold", Arial, sans-serif;
+  font-family: Open_sans, Arial, sans-serif;
+  font-weight: 700;
 }
 
 .ipnone_img_mini {
@@ -381,7 +389,8 @@ body{
 }
 
 .H1_1 {
-  font-family: "Lato_black", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   margin-top: 100px; 
   font-size: 28px;
   color: #4c76ff;
@@ -389,7 +398,8 @@ body{
 }
 
 .works_text {
-  font-family: "Lato_thin", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 100;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 70px;
@@ -410,7 +420,8 @@ body{
 .galery > ul > li {
     display: inline-block;
     list-style: none;
-    font-family: 'Lato_black', Arial, sans-serif;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 900;
     font-size: 14px;
     color: black;
     
@@ -671,7 +682,8 @@ body{
 
 
 .H1_2 {
-  font-family: "Lato_black", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   margin-top: 100px;
   padding-top: 75px; 
   font-size: 20.91px;
@@ -715,7 +727,8 @@ body{
 }
 
 .some_text_1 {
-  font-family: 'Open_sans_semibold', Arial, sans-serif;
+  font-family: Open_sans, Arial, sans-serif;
+  font-weight: 600;
   font-size: 44.8px;
   color: white;
   margin-top: 35px;
@@ -730,7 +743,8 @@ body{
 }
 
 .H1_3 {
-  font-family: 'Lato_black', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   margin-top: 80px;
   font-size: 28px;
   color: #4c76ff;
@@ -738,7 +752,8 @@ body{
 }
 
 .some_text {
-  font-family: 'Lato_thin', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 100;
   font-size: 14.96px;
   text-align: center;
   margin-top: 40px;
@@ -877,7 +892,8 @@ body{
 }
 
 .footer_text {
-font-family: 'Lato_thin', sans-serif; 
+font-family: Lato, sans-serif; 
+font-weight: 100;
 }
 
 .footer_block_1 {
@@ -956,7 +972,8 @@ font-family: 'Lato_thin', sans-serif;
 
 .footer_h1 {
 
-  font-family: 'Lato_black', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   font-size: 26.72px;
   color: white;
   /*margin-bottom: 40px;*/
@@ -966,7 +983,8 @@ font-family: 'Lato_thin', sans-serif;
 }
 
 .footer_h2 {
-  font-family: "Lato_black", Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   font-size: 18px;
   /*margin-bottom: 40px;*/
   margin-bottom: 5%;
@@ -1005,7 +1023,8 @@ font-family: 'Lato_thin', sans-serif;
 }
 
 .h3 {
-  font-family: 'Lato_black', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   text-align: left;
   font-size: 20px;
   color: white;
@@ -1021,7 +1040,8 @@ font-family: 'Lato_thin', sans-serif;
 }
 
 .single-picture .close {
-  font-family: 'Lato_black', Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
+  font-weight: 900;
   cursor: pointer;
   margin-right: 10px;
   margin-top: 10px;
@@ -1054,7 +1074,8 @@ font-family: 'Lato_thin', sans-serif;
 }
 
 .page_max_text {
-  font-family: 'Open_sans_bold', Arial, sans-serif;
+  font-family: Open_sans, Arial, sans-serif;
+  font-weight: 700;
   margin-left: 10px;
 
 }
@@ -1470,7 +1491,8 @@ font-family: 'Lato_thin', sans-serif;
   }
 
   .header_title {
-    font-family: 'Lato_black', Arial, sans-serif;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 900;
     font-size: 45px;
     color: white;
     text-align: center;
@@ -1478,7 +1500,8 @@ font-family: 'Lato_thin', sans-serif;
 
   .header_sub_title {
     /*//display: block;*/
-    font-family: 'Lato_thin', Arial, sans-serif;
+    font-family: Lato, Arial, sans-serif;
+    font-weight: 100;
     font-size: 35px;
     text-align: center;
     color: white;

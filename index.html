@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mymodule">
 <head>
 	<meta charset="UTF-8">
 
@@ -24,112 +24,40 @@
 	<title>Sarajevo</title>
 
 	<link rel="stylesheet" type="text/css" href="Css/style2.css">
-
 	
 	
-	<script type="text/javascript">
-		// Этот скрипт должен быть размещён в <head> над всеми внешними объявлениями стилей (link[rel=stylesheet])
-		function loadFont(fontName, woffUrl, woff2Url) {
-		  // 0. Многие неподдерживаемые браузеры должны останавливать работу тут.
-		  var nua = navigator.userAgent;
-		  var noSupport = !window.addEventListener // IE8 и ниже
-		        || (nua.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/) && !nua.match(/Chrome/)) // Android Stock Browser до 4.4 и Opera Mini
+	
 
-		  if (noSupport) {
-		    return;
-		  }
-
-		  // 1. Настраиваем localStorage
-		  var loSto = {};
-		  try {
-		    // Устанавливаем вспомогательную переменную для помощи с localStorage,
-		    // например, для случаев когда cookies отключены и браузер не даёт к ним доступа.
-		    // Иначе могут быть получены исключения, которые полностью остановят загрузку шрифтов.
-		    loSto = localStorage || {};
-		  } catch(ex) {}
-
-		  var localStoragePrefix = 'x-font-' + fontName;
-		  var localStorageUrlKey = localStoragePrefix + 'url';
-		  var localStorageCssKey = localStoragePrefix + 'css';
-		  var storedFontUrl = loSto[localStorageUrlKey];
-		  var storedFontCss = loSto[localStorageCssKey];
-
-		  // 2. Создаём элемент <style>, который мы используем для вставки шрифта, закодированного в base64.
-		  var styleElement = document.createElement('style');
-		  styleElement.rel = 'stylesheet';
-		  document.head.appendChild(styleElement);
-		  // Из-за ошибок IE9 установка styleElement.textContent должна быть после этой строки.
-
-		  // 3. Проверяем, находится ли шрифт уже в localStorage и последней ли он версии.
-		  if (storedFontCss && (storedFontUrl === woffUrl || storedFontUrl === woff2Url)) {
-		    // css до сих пор в localStorage
-		    // и были загружены из одного из текущих адресов
-
-		    // 4. Применяем стили шрифта.
-		    styleElement.textContent = storedFontCss;
-		  } else {
-		    // Данных нет, или они загружены с устаревшего URL,
-		    // поэтому мы должны загрузить их снова.
-
-		    // 5. Проверяем поддержку WOFF2 чтобы узнать, какой URL использовать.
-		    var url = (woff2Url && supportsWoff2())
-		    ? woff2Url // WOFF2 URL передан в функцию и поддерживается.
-		    : woffUrl; // Поддерживается только WOFF.
-
-		    // 6. Получаем данные с сервера.
-		    var request = new XMLHttpRequest();
-		    request.open('GET', url);
-		    request.onload = function() {
-		      if (request.status >= 200 && request.status < 400) {
-		        // 7. Обновляем localStorage новыми данными и применяем стили шрифта.
-		        loSto[localStorageUrlKey] = url;
-		        loSto[localStorageCssKey] = styleElement.textContent = request.responseText;
-		      }
-		    };
-		    request.send();
-		  }
-
-		  function supportsWoff2() {
-		    // Источник: https://github.com/filamentgroup/woff2-feature-test
-		    if (!window.FontFace) {
-		      return false;
-		    }
-
-		    var f = new FontFace('t', 'url("data:application/font-woff2,") format("woff2")', {});
-		    f.load();
-
-		    return f.status === 'loading';
-		  }
-		}
-	</script>
+	 <script>function loadFont(a,b,c){function d(){if(!window.FontFace)return!1;var a=new FontFace("t",'url("data:application/font-woff2,") format("woff2")');return a.load(),"loading"===a.status}var e=navigator.userAgent,f=!window.addEventListener||e.match(/(Android (2|3|4.0|4.1|4.2|4.3))|(Opera (Mini|Mobi))/)&&!e.match(/Chrome/);if(!f){var g={};try{g=localStorage||{}}catch(h){}var i="x-font-"+a,j=i+"url",k=i+"css",l=g[j],m=g[k],n=document.createElement("style");if(n.rel="stylesheet",document.head.appendChild(n),!m||l!==b&&l!==c){var o=c&&d()?c:b,p=new XMLHttpRequest;p.open("GET",o),p.onload=function(){p.status>=200&&p.status<400&&(g[j]=o,g[k]=n.textContent=p.responseText)},p.send()}else n.textContent=m}}</script>
 
 
 	<script>
-		loadFont('open_sans', '/fonts/open_sans_regular.css', '/fonts/open_sans_regular_2.css');		
-		loadFont('open_sans_bold', '/fonts/open_sans_bold.css', '/fonts/open_sans_bold_2.css');
-		loadFont('open_sans_semibold', '/fonts/open_sans_semibold.css', '/fonts/open_sans_semibold_2.css');
-		loadFont('lato_black', '/fonts/lato_black.css', '/fonts/lato_black_2.css');
-		loadFont('lato_thin', '/fonts/lato_thin.css', '/fonts/lato_thin_2.css');
+		// loadFont('open_sans', '/fonts/open_sans_regular.css', '/fonts/open_sans_regular_2.css');		
+		// loadFont('open_sans_bold', '/fonts/open_sans_bold.css', '/fonts/open_sans_bold_2.css');
+		// loadFont('open_sans_semibold', '/fonts/open_sans_semibold.css', '/fonts/open_sans_semibold_2.css');
+		// loadFont('lato_black', '/fonts/lato_black.css', '/fonts/lato_black_2.css');
+		// loadFont('lato_thin', '/fonts/lato_thin.css', '/fonts/lato_thin_2.css');
+		loadFont('lato', '/fonts/stylelato.css', '/fonts/stylelato2.css');
+		loadFont('lato', '/fonts/style_open_sans.css', '/fonts/style_open_sans2.css');
 
-		
 	</script>
 
 
 
 </head>
-<body>
+<body  ng-controller="BloksCtrl">
 		<header class="header">
 
 			<a class="menu_mini_2" id="menu_mini_2" href="#" onclick="secret('menu_mini')"><img class="menu_mini_img" src="images/g.png"></a>
 
 			
-			<div id="menu_mini" style="display:none;">
+			<div id="menu_mini" style="display:none;" ng-controller="BloksCtrl">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#">{{menu.Home}}</a></li>
+						<li><a href="#">{{menu.Features}}</a></li>
+						<li><a href="#">{{menu.Works}}</a></li>
+						<li><a href="#">{{menu.Team}}</a></li>
+						<li><a href="#">{{menu.Contact}}</a></li>
 					</ul>
 
 			</div>
@@ -142,14 +70,20 @@
 				
 				<div class="menu">
 					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Features</a></li>
-						<li><a href="#">Works</a></li>
-						<li><a href="#">Team</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="#">{{menu.Home}}</a></li>
+						<li><a href="#">{{menu.Features}}</a></li>
+						<li><a href="#">{{menu.Works}}</a></li>
+						<li><a href="#">{{menu.Team}}</a></li>
+						<li><a href="#">{{menu.Contact}}</a></li>
 					</ul>
 				</div>
 			</nav>
+
+
+		
+
+
+
 			<div class="down_header">
 				<div class="title">
 					<div class="header_title">
@@ -180,13 +114,23 @@
 
 <!-- FUTURES-->
 
-		<div class="features_big">
+		<div class="features_big" ng-controller="BloksCtrl">
 			<div class="H1">FEATURES
 				<div class="shape">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>
 			</div>
-			<div class="features" id="features"></div>
+			<div class="features" id="features">
+				
+				<div class="features_mini" ng-repeat="block in blocks">
+					<img class="features_img" ng-src="{{block.src}}">
+					<span class="features_mini2">{{block.features_mini2}}</span>
+					<div class="features_text">{{block.features_text}}</div>
+				</div>
+		
+	</script>
+
+			</div>
 		</div>
 
 <!-- iPhone-->
@@ -197,23 +141,37 @@
 				<p class="iphone_abz">aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto.</p>
 			</div>
 
-			<div class="block_general">
-				<div class="block_big" id="block_big1"></div>
+			<div class="block_general" ng-controller="BloksCtrl">
+				<div class="block_big" id="block_big1">
+					<div class="block" ng-repeat="block in iblocks">
+						<span>
+							<img class="ipnone_img_mini" ng-src="{{block.src}}">
+						</span>
+						<span class="h">{{block.h}}</span>
+						<p class="iphone_text_mini">
+							{{block.text}}
+						</p>
+					</div>	
+				</div>
 
 				<div class="ciphone">
 					<div>
 						<img class="iphone_img" src="./images/iPhone/iphone.jpg">
 					</div>
-
-
 				</div>
 
-
-
-				<div class="block_big" id="block_big2"></div>
-
+				<div class="block_big" id="block_big2">
+					<div class="block" ng-repeat="block in iblocks2">
+						<span>
+							<img class="ipnone_img_mini" ng-src="{{block.src}}">
+						</span>
+						<span class="h">{{block.h}}</span>
+						<p class="iphone_text_mini">
+							{{block.text}}
+						</p>
+					</div>
+				</div>
 			</div>
-
 		</div>
 
 <!-- KS-->
@@ -243,9 +201,29 @@
 			</div>
 		
 
-			<div class="galery_img_big" id="galery_img_big">
-				<div class="galery_img" id="galery_img_1"></div>
-				<div class="galery_img" id="galery_img_2"></div>
+			<div class="galery_img_big" id="galery_img_big"  ng-controller="BloksCtrl">
+				<div class="galery_img" id="galery_img_1">
+					<div class="galery_block" ng-repeat="block in galery_mini1">
+						
+						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<div class="galery_hover" index='{{id}}'>
+							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<p id="galery_text1">{{block.galery_text1}}</p>
+							<p id="galery_text2">{{block.galery_text2}}</p>
+						</div>
+					</div>
+				</div>
+				<div class="galery_img" id="galery_img_2">
+					<div class="galery_block" ng-repeat="block in galery_mini2">
+						
+						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<div class="galery_hover" index='{{id}}'>
+							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<p id="galery_text1">{{block.galery_text1}}</p>
+							<p id="galery_text2">{{block.galery_text2}}</p>
+						</div>
+					</div>
+				</div>
 			</div>
 
 
@@ -274,11 +252,34 @@
 				</p>
 			</div>
 
-			<div class="meet_img" id="meet_img"></div>
+			<div class="meet_img" id="meet_img" ng-controller="BloksCtrl">
+				<div class="meet_img_mini" ng-repeat="block in meet_img_mini">
+					<div class="meet_rod">
+						<a class="meet_img_mini_2" href="#"><img src="{{block.src}}" height="250" width="225"></a>
+						<div class="meet_img_text">
+							<div class="meet_img_text2"> <p>{{text2_1}}</p>
+								<p> </p>
+								<p>{{block.text2_2}}</p>
+								{{block.text2_3}}
+							</div>
+							<div class="meet_social">
+								<ul>
+									<li><a href="#"><img src="{{block.tv}}"></a></li>
+									<li><a href="#"><img src="{{block.fb}}"></a></li>
+									<li><a href="#"><img src="{{block.gg}}"></a></li>
+								</ul>
+							</div>
+						</div> 
+					</div>
+
+					<p class="meet_text_1">{{block.meet_text_1}}</p>
+					<p class="meet_text_2">{{block.meet_text_2}}</p>
+				</div>
+			</div>
 		</div>
 
 
-		<div class="some_fun_facts">
+		<div class="some_fun_facts" ng-controller="BloksCtrl">
 			<div class="H1_2">
 				SOME FUN FACTS
 				<div class="shape_2">
@@ -286,7 +287,15 @@
 				</div>				
 			</div>
 
-			<div class="some_img" id="some_img"></div>
+			<div class="some_img" id="some_img">
+				<div class="some_img_mini" ng-repeat="block in some_img_mini">
+					<div>
+						<a href="#"><img class="some_img_mini_2" src="{{block.src}}"></a>
+					</div>
+					<p class="some_text_1">{{block.text1}}</p>
+					<p class="some_text_2">{{block.text2}}</p>
+				</div>
+			</div>
 
 
 		</div>
@@ -365,7 +374,7 @@
 
 
 		<div class="meet_maps">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+			// <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
 		</div>
 
 
@@ -432,19 +441,28 @@
 
 	</div>
 
+
+
+
+
+
 	<!-- <script type="text/javascript" language="javascript" src="js/jquery-3.1.1.min.js"></script> -->
+
+	
+	<script src="js/angular.min.js"></script>
+	<script src="angular-app/app.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript">
 		window.jQuery || document.write('<script type="text/javascript" src="js/jquery-3.1.1.min.js"><\/script>');
 	</script>
-
-	<script type="text/javascript" src="js/handlebars.js"></script>
-	<script type="text/javascript" language="javascript" src="js/script2.js"></script>	
+<!-- 
+	// <script type="text/javascript" src="js/handlebars.js"></script> -->
+	<script type="text/javascript" language="javascript" src="js/script.js"></script>	
 
 
 	
 
-	<script id="sfeatures_mini" type="text/x-handlebars-template">
+	<!-- <script id="sfeatures_mini" type="text/x-handlebars-template">
 		{{#each blocks}}
 		<div class="features_mini">
 			<img class="features_img" src="{{src}}">
@@ -452,36 +470,36 @@
 			<div class="features_text">{{features_text}}</div>
 		</div>
 		{{/each}}
-	</script>
+	</script> -->
 
 
-	<script id="sgalery_img" type="text/x-handlebars-template">
-		{{#each features1}}
-			<div class="galery_block">
-				<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
-				<img class='picture_open' index='{{id}}' src="{{src}}">
-				<div class="galery_hover" index='{{id}}'>
-					<img class="galery_hover_img" id="galery_hover_img" src="{{src_hover}}">
-					<p id="galery_text1">{{galery_text1}}</p>
-					<p id="galery_text2">{{galery_text2}}</p>
-				</div>
-			</div>
-		{{/each}}
-	</script>
+	// <script id="sgalery_img" type="text/x-handlebars-template">
+	// 	{{#each features1}}
+	// 		<div class="galery_block">
+	// 			<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
+	// 			<img class='picture_open' index='{{id}}' src="{{src}}">
+	// 			<div class="galery_hover" index='{{id}}'>
+	// 				<img class="galery_hover_img" id="galery_hover_img" src="{{src_hover}}">
+	// 				<p id="galery_text1">{{galery_text1}}</p>
+	// 				<p id="galery_text2">{{galery_text2}}</p>
+	// 			</div>
+	// 		</div>
+	// 	{{/each}}
+	// </script>
 
-	<script id="sgalery_img2" type="text/x-handlebars-template">
-		{{#each features2}}
-			<div class="galery_block">
-				<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
-				<img class='picture_open' index='{{id}}' src="{{src}}">
-				<div class="galery_hover2">
-					<img class="galery_hover_img" src="{{src_hover}}">
-					<p id="galery_text1">{{galery_text1}}</p>
-					<p id="galery_text2">{{galery_text2}}</p>
-				</div>
-			</div>
-		{{/each}}
-	</script>
+	// <script id="sgalery_img2" type="text/x-handlebars-template">
+	// 	{{#each features2}}
+	// 		<div class="galery_block">
+	// 			<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
+	// 			<img class='picture_open' index='{{id}}' src="{{src}}">
+	// 			<div class="galery_hover2">
+	// 				<img class="galery_hover_img" src="{{src_hover}}">
+	// 				<p id="galery_text1">{{galery_text1}}</p>
+	// 				<p id="galery_text2">{{galery_text2}}</p>
+	// 			</div>
+	// 		</div>
+	// 	{{/each}}
+	// </script>
 
 	<!-- <script id="sgalery_img2" type="text/x-handlebars-template">
 		{{#each features2}}
@@ -490,66 +508,66 @@
 	</script> -->
 
 
-	<script id="siphone_block1" type="text/x-handlebars-template">
-		{{#each iphone_block1}}
-		<div class="block">
-				<span><img class="ipnone_img_mini" src="{{src}}"></span>
-				<span class="h">{{h}}</span>
-				<p class="iphone_text_mini">{{text}}</p>
-		</div>
-		{{/each}}
-	</script>
+	// <script id="siphone_block1" type="text/x-handlebars-template">
+	// 	{{#each iphone_block1}}
+	// 	<div class="block">
+	// 			<span><img class="ipnone_img_mini" src="{{src}}"></span>
+	// 			<span class="h">{{h}}</span>
+	// 			<p class="iphone_text_mini">{{text}}</p>
+	// 	</div>
+	// 	{{/each}}
+	// </script>
 
-	<script id="siphone_block2" type="text/x-handlebars-template">
-		{{#each iphone_block2}}
-		<div class="block">
-				<span><img class="ipnone_img_mini" src="{{src}}"></span>
-				<span class="h">{{h}}</span>
-				<p class="iphone_text_mini">{{text}}</p>
-		</div>
-		{{/each}}
-	</script>
-
-
-	<script id="smeet_img_mini" type="text/x-handlebars-template">
-		{{#each meet_img_mini}}
-		<div class="meet_img_mini">
-			<div class="meet_rod">
-				<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
-				<div class="meet_img_text">
-					<div class="meet_img_text2"> <p>{{text2_1}}</p>
-						<p> </p>
-						<p>{{text2_2}}</p>
-						{{text2_3}}
-					</div>
-					<div class="meet_social">
-						<ul>
-							<li><a href="#"><img src="{{tv}}"></a></li>
-							<li><a href="#"><img src="{{fb}}"></a></li>
-							<li><a href="#"><img src="{{gg}}"></a></li>
-						</ul>
-					</div>
-				</div> 
-			</div>
-
-			<p class="meet_text_1">{{meet_text_1}}</p>
-			<p class="meet_text_2">{{meet_text_2}}</p>
-		</div>
-		{{/each}}
-	</script>
+	// <script id="siphone_block2" type="text/x-handlebars-template">
+	// 	{{#each iphone_block2}}
+	// 	<div class="block">
+	// 			<span><img class="ipnone_img_mini" src="{{src}}"></span>
+	// 			<span class="h">{{h}}</span>
+	// 			<p class="iphone_text_mini">{{text}}</p>
+	// 	</div>
+	// 	{{/each}}
+	// </script>
 
 
-	<script id="ssome_img_mini" type="text/x-handlebars-template">
-		{{#each some_img_mini}}
-		<div class="some_img_mini">
-					<div>
-						<a href="#"><img class="some_img_mini_2" src="{{src}}"></a>
-					</div>
-					<p class="some_text_1">{{text1}}</p>
-					<p class="some_text_2">{{text2}}</p>
-				</div>
-		{{/each}}
-	</script>
+	// <script id="smeet_img_mini" type="text/x-handlebars-template">
+	// 	{{#each meet_img_mini}}
+	// 	<div class="meet_img_mini">
+	// 		<div class="meet_rod">
+	// 			<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
+	// 			<div class="meet_img_text">
+	// 				<div class="meet_img_text2"> <p>{{text2_1}}</p>
+	// 					<p> </p>
+	// 					<p>{{text2_2}}</p>
+	// 					{{text2_3}}
+	// 				</div>
+	// 				<div class="meet_social">
+	// 					<ul>
+	// 						<li><a href="#"><img src="{{tv}}"></a></li>
+	// 						<li><a href="#"><img src="{{fb}}"></a></li>
+	// 						<li><a href="#"><img src="{{gg}}"></a></li>
+	// 					</ul>
+	// 				</div>
+	// 			</div> 
+	// 		</div>
+
+	// 		<p class="meet_text_1">{{meet_text_1}}</p>
+	// 		<p class="meet_text_2">{{meet_text_2}}</p>
+	// 	</div>
+	// 	{{/each}}
+	// </script>
+
+
+	// <script id="ssome_img_mini" type="text/x-handlebars-template">
+	// 	{{#each some_img_mini}}
+	// 	<div class="some_img_mini">
+	// 				<div>
+	// 					<a href="#"><img class="some_img_mini_2" src="{{src}}"></a>
+	// 				</div>
+	// 				<p class="some_text_1">{{text1}}</p>
+	// 				<p class="some_text_2">{{text2}}</p>
+	// 			</div>
+	// 	{{/each}}
+	// </script>
 
 
 	
