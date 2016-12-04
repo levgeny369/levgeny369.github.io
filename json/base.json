@@ -1,5 +1,5 @@
 {
-  "blocks": [
+  "features": [
     {
           "src": "./images/features/1.png",
           "features_mini2": "Branding",
@@ -213,6 +213,29 @@
     "Team":"Team",
     "Contact":"Contact"
 
+  },
+  "header_sub_title": {
+    "span": "/creative",
+    "text": " one page template."
+  },
+  "header_bot_title":"We are a team of professionals",
+  "features":"FEATURES",
+
+  "iphone":{
+    "iphone_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem ",
+    "iphone_abz":"aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto."
+  },
+
+  "works": {
+    "header":"WORKS",
+    "works_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, ",
+
   }
+
+
+
+
+
+
 }
 

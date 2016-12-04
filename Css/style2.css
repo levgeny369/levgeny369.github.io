@@ -867,14 +867,16 @@ body{
 }
 
 .meet_maps {
+  display: block;
   margin-top: 90px; 
+  /*background-image: url(../images/some2/maps.png);*/
   background-image: url(../images/some2/maps.png);
   -moz-background-size: cover; /* Firefox 3.6+ */
   -webkit-background-size: cover; /* Safari 3.1+ и Chrome 4.0+ */
   -o-background-size: cover; /* Opera 9.6+ */
   background-size: cover; /* Современные браузеры */
   background-repeat: no-repeat;
-  height: 240px;
+  height: 250px;
 }
 
 .footer {
