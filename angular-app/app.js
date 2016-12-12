@@ -7,7 +7,7 @@
 
      $http.get('json/base.json').success(function(data, status, headers, config){
          // console.log('\n\nData: ', data, '\n\nstatus: ', status, '\n\nheaders: ', headers, '\n\nconfig: ', config);
-         $scope.blocks = data.blocks;
+         $scope.features = data.features0;
          $scope.iblocks = data.iphone_block1;
          $scope.iblocks2 = data.iphone_block2;
          $scope.galery_mini1 = data.features1;
@@ -17,7 +17,7 @@
          // $scope.menu = data.menu;
          $scope.json = data;
 
-         
+          // console.log('\n\nscope.features: ', $scope.galery_mini1);     
     
          // console.log('\n\nData.iphone_block1: ', data.iphone_block2);
          // console.log('\n\nData.iphone_block1: ', $scope.iblocks2);
@@ -45,6 +45,22 @@
   });
 
 
+
+(function(angular) {
+  'use strict';
+angular.module('anchorScrollExample', [])
+  .controller('ScrollController', ['$scope', '$location', '$anchorScroll',
+    function($scope, $location, $anchorScroll) {
+      $scope.gotoBottom = function() {
+        // set the location.hash to the id of
+        // the element you wish to scroll to.
+        $location.hash('bottom');
+
+        // call $anchorScroll()
+        $anchorScroll();
+      };
+    }]);
+})(window.angular);
 
   // var app = angular.module('dtwoshop',[]);
 

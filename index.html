@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="mymodule">
 <head>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<meta charset="UTF-8">
 
 	<style>
 		input[type="text"]:focus { outline: none; }
 
 	</style>
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet"> -->
-
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 	<title>Sarajevo</title>
-
 	<link rel="stylesheet" type="text/css" href="Css/style2.css">
 	
 	
@@ -45,8 +34,8 @@
 
 
 </head>
-<body  ng-controller="BloksCtrl">
-		<header class="header">
+<body  ng-controller="BloksCtrl" ng-controller="ScrollController">
+		<header class="header" ng-app="anchorScrollExample">
 
 			<a class="menu_mini_2" id="menu_mini_2" href="#" onclick="secret('menu_mini')"><img class="menu_mini_img" src="images/g.png"></a>
 
@@ -63,14 +52,18 @@
 			</div>
 
 
-			<nav class="top_header">
+			<nav class="top_header" >
 				<div class="logo">
 					sarajevo<span class="point">.</span>
 				</div>
 				
 				<div class="menu">
 					<ul>
-						<li><a href="#">{{json.menu.Home}}</a></li>
+						<!-- <div id="scrollArea" ng-controller="ScrollController"> -->
+  							<!-- <a ng-click="gotoBottom()">Go to bottom</a> -->
+  							<!-- <a id="bottom"></a> You're at the bottom! -->
+  						<!-- </div> -->
+						<li><a href="#" ng-click="gotoBottom()">{{json.menu.Home}}</a></li>
 						<li><a href="#">{{json.menu.Features}}</a></li>
 						<li><a href="#">{{json.menu.Works}}</a></li>
 						<li><a href="#">{{json.menu.Team}}</a></li>
@@ -91,7 +84,7 @@
 					</div>
 
 					<div class="header_sub_title">
-						<span class="point">{{json.header_sub_title.span}}</span>{{json.header_sub_title.text}}.
+						<span class="point">{{json.header_sub_title.span}}</span>{{json.header_sub_title.text}}
 					</div>
 
 					<div class="header_bot_title">
@@ -177,26 +170,26 @@
 <!-- KS-->
 		<div class="works">
 			<div class="H1_1">
-				<!-- WORKS{{json.works.header}} -->
+				{{json.works.header}}
 				<div class="shape">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>				
 			</div>
 
 			<div class="works_text">
-				<!-- {{json.works.works_text}} -->
+				{{json.works.works_text}}
 				<p>
-					eaque ipsa quae ab illo inventore
+					{{json.works.p}}
 				</p>
 			</div>
 
 			<div class="galery">
 				<ul>
-					<li><a href="#">All</a></li>
-					<li><a href="#">Branding</a></li>
-					<li><a href="#">Web</a></li>
-					<li><a href="#">Logo Design</a></li>
-					<li><a href="#">Photography</a></li>
+					<li><a href="#">{{json.works.galery.All}}</a></li>
+					<li><a href="#">{{json.works.galery.Branding}}</a></li>
+					<li><a href="#">{{json.works.galery.Web}}</a></li>
+					<li><a href="#">{{json.works.galery.Logo}}</a></li>
+					<li><a href="#">{{json.works.galery.Photography}}</a></li>
 				</ul>
 			</div>
 		
@@ -213,6 +206,7 @@
 						</div>
 					</div>
 				</div>
+
 				<div class="galery_img" id="galery_img_2">
 					<div class="galery_block" ng-repeat="block in galery_mini2">
 						
@@ -235,9 +229,9 @@
 
 		<!-- Meet Our Team-->
 
-		<div class="Meet">
+		<div class="Meet"  id="bottom">
 			<div class="H1_1">
-				MEET OUR TEAM
+				{{json.meet.header}}
 				<div class="shape">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>				
@@ -246,9 +240,9 @@
 
 
 			<div class="works_text">
-				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque 
+				{{json.meet.text}}
 				<p>
-					ipsa quae ab illo inventore
+					{{json.meet.p}}
 				</p>
 			</div>
 
@@ -281,7 +275,7 @@
 
 		<div class="some_fun_facts">
 			<div class="H1_2">
-				SOME FUN FACTS
+				{{json.some_fun_fucts.header}}
 				<div class="shape_2">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>				
@@ -304,32 +298,32 @@
 <!---->
 	
 		<div class="H1_3">
-				LET’S DISCUSS
+				{{json.lets.header}}
 				<div class="shape_2">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>				
 		</div>		
 
 		<div class="some_text">
-				Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+				{{json.lets.text}}
 		</div>
 
 		<div class="some_forma">
 			<div class="some_block_1">
 				<div class="some_text_inf">
-					<H1>Cras at ultrices erat, sed <p class="some_h1">vulputate!</p></H1>
+					<H1>{{json.lets.H1}}<p class="some_h1">{{json.lets.p}}</p></H1>
 
-					<p class="some_block_inf">2345 Setwant natrer, 1234, </p>
-					<p class="some_block_inf">Washington. United States.</p>
-					<p class="some_block_inf">(401) 1234 567</p>
-					<p class="some_block_inf">hello@brandi.com</p>
-					<p class="some_block_inf">ww.brandi.com</p>
+					<p class="some_block_inf">{{json.lets.some_block_inf.adr}}</p>
+					<p class="some_block_inf">{{json.lets.some_block_inf.city}}</p>
+					<p class="some_block_inf">{{json.lets.some_block_inf.tel}}</p>
+					<p class="some_block_inf">{{json.lets.some_block_inf.email}}</p>
+					<p class="some_block_inf">{{json.lets.some_block_inf.www}}</p>
 				</div>
 			</div>
 
 			
 			<div class="some_block_2">
-				<p class="some_contact_h1">Say hello!</p>
+				<p class="some_contact_h1">{{json.lets.some_block_2.h1}}</p>
 				<div class="hole"></div>
 					<div class="some_input_1">
 						<div class="meet_input_big">
@@ -369,12 +363,12 @@
 		</div> 
 
 		<div class="some_botom">
-			<a class="silka" href="#"><img class="meet_botom_img" src="./images/some2/Envelope.png"> Send message</a>
+			<a class="silka" href="#"><img class="meet_botom_img" src="./images/some2/Envelope.png">{{json.lets.some_block_2.button}}</a>
 		</div>
 
 
 		<div class="meet_maps">
-			// <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
+			 <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=fzwv9glSD1jDMyZLjBDHzrKhF5yN0aFT&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
 		</div>
 
 
@@ -383,194 +377,72 @@
 		<div class="footer">
 			<div class="footer_block_1">
 				<div class="footer_h1">
-					sarajevo<span class="point">.</span>
+					{{json.footer.logo2}}<span class="point">.</span>
 				</div>
 				<div class="footer_text">
-					eusmod tempor incididunt ut labore et dolore magna aliqua. 
-					Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-					laboris nisi ut aliquip ex ea commodo consequat.
+					{{json.footer.text}}
 				</div>
 			</div>
 			<div class="footer_block_2">
-				<p class="footer_h2">Subscribe </p>
+				<p class="footer_h2">{{json.footer.subscribe.header}}</p>
 				<input class="some_inp_new" type="text" value="E-mail" onblur="if(this.value=='') this.value='E-mail';" onfocus="if(this.value=='E-mail') this.value='';" name="email" maxlength="20">
 				<a href="#"><img class="str" src="./images/lets/str.png"></a>
 				<p class="footer_text">
-					eusmod tempor incididunt ut labore et dolore magna aliqua. 
+					{{json.footer.subscribe.text}}
 				</p>
 			</div>
 
 			<div class="footer_block_3">
-				<p class="footer_h2">Explore</p>
+				<p class="footer_h2">{{json.footer.explore.header}}</p>
 				<div class="footer_block_3_menu">
 					<ul class="footer_text">
-						<li><a href="#">Envato</a></li>
-						<li><a href="#">Themecurve</a></li>
-						<li><a href="#">Kreativeshowcase</a></li>
-						<li><a href="#">Freebiescurve</a></li>
+						<li><a href="#">{{json.footer.explore.Envato}}</a></li>
+						<li><a href="#">{{json.footer.explore.Themecurve}}</a></li>
+						<li><a href="#">{{json.footer.explore.Kreativeshowcase}}</a></li>
+						<li><a href="#">{{json.footer.explore.Freebiescurve}}</a></li>
 					</ul>
 
 					<ul class="footer_text">
-						<li><a href="#">Themeforest</a></li>
-						<li><a href="#">Microsoft</a></li>
-						<li><a href="#">Google</a></li>
-						<li><a href="#">Yahoo</a></li>
+						<li><a href="#">{{json.footer.explore.Themeforest}}</a></li>
+						<li><a href="#">{{json.footer.explore.Microsoft}}</a></li>
+						<li><a href="#">{{json.footer.explore.Google}}</a></li>
+						<li><a href="#">{{json.footer.explore.Yahoo}}</a></li>
 					</ul>
 				</div>
 			</div>
 		</div>
 
-	<div class="single-picture page">
 
+
+
+
+
+
+
+
+	<!-- <div class="single-picture page">
 		<div class="overlay"></div>
-
-		
 		<div class="preview-large">
 			<div class="cl_close">
 				<a class="close"><img class="page_close" src="images/zakryt.png"/></a>
 				<h2 class="h3">Resume</h2>
 			</div>
-			
 			<div class="page_img">
 				<img id="page_img" src=""/>
 			</div>
 			<h3 class="page_max_text"></h3>
 			<p class="page_p"></p>
 		</div>
-		
-
-	</div>
-
-
-
-
-
-
-	<!-- <script type="text/javascript" language="javascript" src="js/jquery-3.1.1.min.js"></script> -->
+	</div> -->
 
 	
 	<script src="js/angular.min.js"></script>
 	<script src="angular-app/app.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript">
-		window.jQuery || document.write('<script type="text/javascript" src="js/jquery-3.1.1.min.js"><\/script>');
-	</script>
-<!-- 
-	// <script type="text/javascript" src="js/handlebars.js"></script> -->
-	<script type="text/javascript" language="javascript" src="js/script.js"></script>	
-
-
-	
-
-	<!-- <script id="sfeatures_mini" type="text/x-handlebars-template">
-		{{#each blocks}}
-		<div class="features_mini">
-			<img class="features_img" src="{{src}}">
-			<span class="features_mini2">{{features_mini2}}</span>
-			<div class="features_text">{{features_text}}</div>
-		</div>
-		{{/each}}
-	</script> -->
-
-
-	// <script id="sgalery_img" type="text/x-handlebars-template">
-	// 	{{#each features1}}
-	// 		<div class="galery_block">
-	// 			<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
-	// 			<img class='picture_open' index='{{id}}' src="{{src}}">
-	// 			<div class="galery_hover" index='{{id}}'>
-	// 				<img class="galery_hover_img" id="galery_hover_img" src="{{src_hover}}">
-	// 				<p id="galery_text1">{{galery_text1}}</p>
-	// 				<p id="galery_text2">{{galery_text2}}</p>
-	// 			</div>
-	// 		</div>
-	// 	{{/each}}
+	<!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+	 <script type="text/javascript">
+	// 	window.jQuery || document.write('<script type="text/javascript" src="js/jquery-3.1.1.min.js"><\/script>');
 	// </script>
-
-	// <script id="sgalery_img2" type="text/x-handlebars-template">
-	// 	{{#each features2}}
-	// 		<div class="galery_block">
-	// 			<!-- <a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a> -->
-	// 			<img class='picture_open' index='{{id}}' src="{{src}}">
-	// 			<div class="galery_hover2">
-	// 				<img class="galery_hover_img" src="{{src_hover}}">
-	// 				<p id="galery_text1">{{galery_text1}}</p>
-	// 				<p id="galery_text2">{{galery_text2}}</p>
-	// 			</div>
-	// 		</div>
-	// 	{{/each}}
-	// </script>
-
-	<!-- <script id="sgalery_img2" type="text/x-handlebars-template">
-		{{#each features2}}
-			<a href="#" class='picture_open' index='{{id}}'><img src="{{src}}"></a>
-		{{/each}}
-	</script> -->
-
-
-	// <script id="siphone_block1" type="text/x-handlebars-template">
-	// 	{{#each iphone_block1}}
-	// 	<div class="block">
-	// 			<span><img class="ipnone_img_mini" src="{{src}}"></span>
-	// 			<span class="h">{{h}}</span>
-	// 			<p class="iphone_text_mini">{{text}}</p>
-	// 	</div>
-	// 	{{/each}}
-	// </script>
-
-	// <script id="siphone_block2" type="text/x-handlebars-template">
-	// 	{{#each iphone_block2}}
-	// 	<div class="block">
-	// 			<span><img class="ipnone_img_mini" src="{{src}}"></span>
-	// 			<span class="h">{{h}}</span>
-	// 			<p class="iphone_text_mini">{{text}}</p>
-	// 	</div>
-	// 	{{/each}}
-	// </script>
-
-
-	// <script id="smeet_img_mini" type="text/x-handlebars-template">
-	// 	{{#each meet_img_mini}}
-	// 	<div class="meet_img_mini">
-	// 		<div class="meet_rod">
-	// 			<a class="meet_img_mini_2" href="#"><img src="{{src}}" height="250" width="225"></a>
-	// 			<div class="meet_img_text">
-	// 				<div class="meet_img_text2"> <p>{{text2_1}}</p>
-	// 					<p> </p>
-	// 					<p>{{text2_2}}</p>
-	// 					{{text2_3}}
-	// 				</div>
-	// 				<div class="meet_social">
-	// 					<ul>
-	// 						<li><a href="#"><img src="{{tv}}"></a></li>
-	// 						<li><a href="#"><img src="{{fb}}"></a></li>
-	// 						<li><a href="#"><img src="{{gg}}"></a></li>
-	// 					</ul>
-	// 				</div>
-	// 			</div> 
-	// 		</div>
-
-	// 		<p class="meet_text_1">{{meet_text_1}}</p>
-	// 		<p class="meet_text_2">{{meet_text_2}}</p>
-	// 	</div>
-	// 	{{/each}}
-	// </script>
-
-
-	// <script id="ssome_img_mini" type="text/x-handlebars-template">
-	// 	{{#each some_img_mini}}
-	// 	<div class="some_img_mini">
-	// 				<div>
-	// 					<a href="#"><img class="some_img_mini_2" src="{{src}}"></a>
-	// 				</div>
-	// 				<p class="some_text_1">{{text1}}</p>
-	// 				<p class="some_text_2">{{text2}}</p>
-	// 			</div>
-	// 	{{/each}}
-	// </script>
-
-
-	
+	<script type="text/javascript" language="javascript" src="js/script2.js"></script>	
 
 </body>
 </html>

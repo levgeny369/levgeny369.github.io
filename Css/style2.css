@@ -997,6 +997,16 @@ font-weight: 100;
   display: none;
 }
 
+/*#scrollArea {
+  height: 280px;
+  overflow: auto;
+}*/
+/*
+#bottom {
+  display: block;
+  margin-top: 2000px;
+}*/
+
 @media screen and (min-width: 450px)  {
 .single-picture.visible{
   display: block;  

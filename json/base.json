@@ -1,5 +1,5 @@
 {
-  "features": [
+  "features0": [
     {
           "src": "./images/features/1.png",
           "features_mini2": "Branding",
@@ -16,9 +16,7 @@
          "features_text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore  "
        }
      ],
-
-  
-      
+    
   "features1": [
     {   
         "id":"1",
@@ -57,7 +55,6 @@
         "galery_text2" : "Photography"
     }
   ],
-
      
   "features2": [
     {
@@ -91,7 +88,6 @@
         "galery_text2" : "Photography"
     }
   ],
-
 
   "iphone_block1": [
       {
@@ -128,7 +124,6 @@
         "text": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
       }
   ],
-
 
   "meet_img_mini": [
       {
@@ -178,10 +173,7 @@
           "meet_text_1": "Steve Flaulkin",
           "meet_text_2": "Sr. UI Designer"
       }
-
-
   ],
-
 
   "some_img_mini": [
       {
@@ -212,12 +204,13 @@
     "Works":"Works",
     "Team":"Team",
     "Contact":"Contact"
-
   },
+
   "header_sub_title": {
     "span": "/creative",
     "text": " one page template."
   },
+  
   "header_bot_title":"We are a team of professionals",
   "features":"FEATURES",
 
@@ -228,11 +221,64 @@
 
   "works": {
     "header":"WORKS",
-    "works_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, "
+    "works_text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, ",
+    "p":"eaque ipsa quae ab illo inventore",
+    "galery":{
+      "All":"All",
+      "Branding":"Branding",
+      "Web":"Web",
+      "Logo":"Logo Design",
+      "Photography":"Photography"
+    }
+  },
 
+  "meet":{
+    "header":"MEET OUR TEAM",
+    "text":"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ",
+    "p":"ipsa quae ab illo inventore"
+  },
+
+  "some_fun_fucts":{
+    "header":"SOME FUN FACTS"
+  },
+
+  "lets":{
+    "header":"LET’S DISCUSS",
+    "text":"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore",
+    "H1":"Cras at ultrices erat, sed ",
+    "p":"vulputate!",
+    "some_block_inf":{
+      "adr":"2345 Setwant natrer, 1234, ",
+      "city":"Washington. United States.",
+      "tel":"(401) 1234 567",
+      "email":"hello@brandi.com",
+      "www":"www.brandi.com"
+    },
+    "some_block_2":{
+      "h1":"Say hello!",
+      "button":" Send message"
+    }
+  },
+
+  "footer":{
+    "logo2":"sarajevo",
+    "text":"eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "subscribe":{
+      "header":"Subscribe",
+      "text":"eusmod tempor incididunt ut labore et dolore magna aliqua. "
+    },
+    "explore":{
+      "header":"Explore",
+      "Envato":"Envato",
+      "Themecurve":"Themecurve",
+      "Kreativeshowcase":"Kreativeshowcase",
+      "Freebiescurve":"Freebiescurve",
+      "Themeforest":"Themeforest",
+      "Microsoft":"Microsoft",
+      "Google":"Google",
+      "Yahoo":"Yahoo"
+    }
   }
-
-
 
 
 
