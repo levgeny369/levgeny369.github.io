@@ -139,6 +139,14 @@ body{
   display: none;
 }
 
+.menu {
+  z-index: 9999999;
+  position: fixed;
+  right: 5%;
+
+
+}
+
 .menu ul {
   
   display: flex;
@@ -151,6 +159,8 @@ body{
 
 .menu > ul > li {
     display: inline-block;
+     /*text-shadow: #4c76ff 1px 1px 0, #4c76ff -1px -1px 0, 
+                 #4c76ff -1px 1px 0, #4c76ff 1px -1px 0;*/
     list-style: none;
     font-family: Lato, Arial, sans-serif;
     font-weight: 100;

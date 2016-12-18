@@ -34,7 +34,7 @@
 
 
 </head>
-<body  ng-controller="BloksCtrl" ng-controller="ScrollController">
+<body  ng-controller="MyCtrl" ng-controller="ScrollController">
 		<header class="header" ng-app="anchorScrollExample">
 
 			<a class="menu_mini_2" id="menu_mini_2" href="#" onclick="secret('menu_mini')"><img class="menu_mini_img" src="images/g.png"></a>
@@ -63,11 +63,11 @@
   							<!-- <a ng-click="gotoBottom()">Go to bottom</a> -->
   							<!-- <a id="bottom"></a> You're at the bottom! -->
   						<!-- </div> -->
-						<li><a href="#" ng-click="gotoBottom()">{{json.menu.Home}}</a></li>
-						<li><a href="#">{{json.menu.Features}}</a></li>
-						<li><a href="#">{{json.menu.Works}}</a></li>
-						<li><a href="#">{{json.menu.Team}}</a></li>
-						<li><a href="#">{{json.menu.Contact}}</a></li>
+						<li><a href="" ng-click="gotoAnchor('home')">{{json.menu.Home}}</a></li>
+						<li><a href="" ng-click="gotoAnchor('features')">{{json.menu.Features}}</a></li>
+						<li><a href="" ng-click="gotoAnchor('works')">{{json.menu.Works}}</a></li>
+						<li><a href="" ng-click="gotoAnchor('team')">{{json.menu.Team}}</a></li>
+						<li><a href="" ng-click="gotoAnchor('contact')">{{json.menu.Contact}}</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -77,7 +77,7 @@
 
 
 
-			<div class="down_header">
+			<div class="down_header" id="home">
 				<div class="title">
 					<div class="header_title">
 						sarajevo<span class="point">.</span>
@@ -95,10 +95,10 @@
 				<div class="big_social">
 					<div class="social">
 						
-						<a href="#"><img src="./images/social/twitter.gif"></a>
-						<a href="#"><img src="./images/social/facebook.gif"></a>
-						<a href="#"><img src="./images/social/google+.gif"></a>
-						<a href="#"><img src="./images/social/dribbble.gif"></a>
+						<a href="https://twitter.com/"><img src="./images/social/twitter.gif"></a>
+						<a href="https://www.facebook.com/"><img src="./images/social/facebook.gif"></a>
+						<a href="https://www.google.ru/"><img src="./images/social/google+.gif"></a>
+						<a href="https://dribbble.com/"><img src="./images/social/dribbble.gif"></a>
 					</div>
 				</div>
 			</div>
@@ -108,14 +108,14 @@
 <!-- FUTURES-->
 
 		<div class="features_big">
-			<div class="H1">{{json.features}}
+			<div class="H1" id="features">{{json.features}}
 				<div class="shape">
 					<img class="shape_img" src="./images/features/Shape.gif">
 				</div>
 			</div>
 			<div class="features" id="features">
 				
-				<div class="features_mini" ng-repeat="block in features">
+				<div class="features_mini" ng-repeat="block in json.features0">
 					<img class="features_img" ng-src="{{block.src}}">
 					<span class="features_mini2">{{block.features_mini2}}</span>
 					<div class="features_text">{{block.features_text}}</div>
@@ -136,7 +136,7 @@
 
 			<div class="block_general">
 				<div class="block_big" id="block_big1">
-					<div class="block" ng-repeat="block in iblocks">
+					<div class="block" ng-repeat="block in json.iphone_block1">
 						<span>
 							<img class="ipnone_img_mini" ng-src="{{block.src}}">
 						</span>
@@ -154,7 +154,7 @@
 				</div>
 
 				<div class="block_big" id="block_big2">
-					<div class="block" ng-repeat="block in iblocks2">
+					<div class="block" ng-repeat="block in json.iphone_block2">
 						<span>
 							<img class="ipnone_img_mini" ng-src="{{block.src}}">
 						</span>
@@ -168,7 +168,8 @@
 		</div>
 
 <!-- KS-->
-		<div class="works">
+		<div class="works" id="works">
+			<a id="bottom"></a>
 			<div class="H1_1">
 				{{json.works.header}}
 				<div class="shape">
@@ -196,11 +197,11 @@
 
 			<div class="galery_img_big" id="galery_img_big">
 				<div class="galery_img" id="galery_img_1">
-					<div class="galery_block" ng-repeat="block in galery_mini1">
+					<div class="galery_block" ng-repeat="block in json.features1">
 						
-						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<img class='picture_open' index='{{block.id}}' ng-src="{{block.src}}">
 						<div class="galery_hover" index='{{id}}'>
-							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<img class="galery_hover_img" id="galery_hover_img" ng-src="{{block.src_hover}}">
 							<p id="galery_text1">{{block.galery_text1}}</p>
 							<p id="galery_text2">{{block.galery_text2}}</p>
 						</div>
@@ -208,11 +209,11 @@
 				</div>
 
 				<div class="galery_img" id="galery_img_2">
-					<div class="galery_block" ng-repeat="block in galery_mini2">
+					<div class="galery_block" ng-repeat="block in json.features2">
 						
-						<img class='picture_open' index='{{block.id}}' src="{{block.src}}">
+						<img class='picture_open' index='{{block.id}}' ng-src="{{block.src}}">
 						<div class="galery_hover" index='{{id}}'>
-							<img class="galery_hover_img" id="galery_hover_img" src="{{block.src_hover}}">
+							<img class="galery_hover_img" id="galery_hover_img" ng-src="{{block.src_hover}}">
 							<p id="galery_text1">{{block.galery_text1}}</p>
 							<p id="galery_text2">{{block.galery_text2}}</p>
 						</div>
@@ -229,7 +230,7 @@
 
 		<!-- Meet Our Team-->
 
-		<div class="Meet"  id="bottom">
+		<div class="Meet"  id="team">
 			<div class="H1_1">
 				{{json.meet.header}}
 				<div class="shape">
@@ -247,9 +248,9 @@
 			</div>
 
 			<div class="meet_img" id="meet_img">
-				<div class="meet_img_mini" ng-repeat="block in meet_img_mini">
+				<div class="meet_img_mini" ng-repeat="block in json.meet_img_mini">
 					<div class="meet_rod">
-						<a class="meet_img_mini_2" href="#"><img src="{{block.src}}" height="250" width="225"></a>
+						<a class="meet_img_mini_2" href="#"><img ng-src="{{block.src}}" height="250" width="225"></a>
 						<div class="meet_img_text">
 							<div class="meet_img_text2"> <p>{{text2_1}}</p>
 								<p> </p>
@@ -258,9 +259,9 @@
 							</div>
 							<div class="meet_social">
 								<ul>
-									<li><a href="#"><img src="{{block.tv}}"></a></li>
-									<li><a href="#"><img src="{{block.fb}}"></a></li>
-									<li><a href="#"><img src="{{block.gg}}"></a></li>
+									<li><a href="#"><img ng-src="{{block.tv}}"></a></li>
+									<li><a href="#"><img ng-src="{{block.fb}}"></a></li>
+									<li><a href="#"><img ng-src="{{block.gg}}"></a></li>
 								</ul>
 							</div>
 						</div> 
@@ -282,9 +283,9 @@
 			</div>
 
 			<div class="some_img" id="some_img">
-				<div class="some_img_mini" ng-repeat="block in some_img_mini">
+				<div class="some_img_mini" ng-repeat="block in json.some_img_mini">
 					<div>
-						<a href="#"><img class="some_img_mini_2" src="{{block.src}}"></a>
+						<a href="#"><img class="some_img_mini_2" ng-src="{{block.src}}"></a>
 					</div>
 					<p class="some_text_1">{{block.text1}}</p>
 					<p class="some_text_2">{{block.text2}}</p>
@@ -297,7 +298,7 @@
 
 <!---->
 	
-		<div class="H1_3">
+		<div class="H1_3" id="contact">
 				{{json.lets.header}}
 				<div class="shape_2">
 					<img class="shape_img" src="./images/features/Shape.gif">
